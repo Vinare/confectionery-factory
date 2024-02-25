@@ -1,0 +1,62 @@
+.header {
+  height: 85px;
+  background-color: $orange;
+  
+  &__logo {
+    padding-top: 6px;
+    margin-right: 100px;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    
+
+    &.-mobile {
+      display: none;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 28px;
+    padding-bottom: 29px;
+
+    &-wrapper {
+      display: flex;
+    }
+    
+
+    &_item {
+      list-style-type: none; 
+      padding-right: 40px;
+      height: inherit;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &_link {
+      text-decoration: none;
+      color: $white;
+      font-family: "Geologica";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0%; 
+    }
+
+    &_elem {
+      list-style-type: none;
+    }
+
+    &.-right {
+      padding-top: 18px;
+      padding-bottom: 19px;
+      
+    }
+  }
+}
