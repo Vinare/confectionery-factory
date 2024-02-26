@@ -368,7 +368,6 @@ template {
 .header__navbar_item {
   list-style-type: none;
   padding-right: 40px;
-  height: inherit;
 }
 .header__navbar_item:last-child {
   padding-right: 0;
@@ -380,12 +379,121 @@ template {
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0%;
 }
 .header__navbar_elem {
   list-style-type: none;
+  padding-right: 32px;
+}
+.header__navbar_elem.-telegram {
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header__navbar_elem:last-child {
+  padding-right: 0;
+  padding-top: 6px;
 }
 .header__navbar.-right {
   padding-top: 18px;
   padding-bottom: 19px;
+}
+.header__navbar_select {
+  display: flex;
+  flex-direction: column;
+  min-width: 87px;
+  height: 32px;
+  padding: 4px 8px 0;
+  border-radius: 8px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.header__navbar_select li {
+  color: #FFFFFF;
+  font-family: "Geologica";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  height: 28px;
+  order: 2;
+  opacity: 0.5;
+  display: flex;
+}
+.header__navbar_select li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.header__navbar_select li.active {
+  order: 1;
+  opacity: 1;
+}
+.header__navbar_select::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 13px;
+  background-image: url("../images/index/language-select-chevron.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 11px;
+}
+.header__navbar_select.open {
+  min-width: 87px;
+  height: auto;
+  background: #ffffff;
+  padding: 4px 8px;
+  row-gap: 4px;
+}
+.header__navbar_select.open li {
+  color: #E54839;
+}
+.header__navbar_select.open li.active {
+  order: 1;
+  opacity: 1;
+  cursor: default;
+  pointer-events: none;
+}
+.header__navbar_select.open::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 65px;
+  top: 12px;
+  background-image: url("../images/index/language-select-close.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.header__navbar_search-input {
+  width: 210px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100px;
+  padding: 8px 20px 8px 60px;
+  background-color: #E54839;
+  background-image: url("../images/index/input-search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left 24px center;
+  color: rgba(255, 255, 255, 0.57);
+  font-family: "Geologica";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.header__navbar_search-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.57);
+  font-family: "Geologica";
+  font-size: 22px;
+  font-weight: 400;
+}
+.header__navbar_search-input::placeholder {
+  color: rgba(255, 255, 255, 0.57);
+  font-family: "Geologica";
+  font-size: 22px;
+  font-weight: 400;
+}
+.header__navbar_search-input:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
