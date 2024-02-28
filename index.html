@@ -17,7 +17,6 @@
   <title>Кондитерская фабрика</title>
 </head>
 <body>
-  
   <header class="header">
     <div class="container">
       <div class="header-menu">
@@ -34,16 +33,21 @@
         <ul class="header__navbar -right">
           <li class="header__navbar_elem">
             <input type="search" class="header__navbar_search-input" placeholder="Поиск">
-            
+            <img class="header__navbar_search" src="images/index/search-icon-mobile.svg" alt="Search">
           </li>
           <li class="header__navbar_elem -telegram">
-            <img class="header__navbar_telegram" src="images/index/icon-telegram.svg" alt="Telegram">
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img class="header__navbar_telegram" src="images/index/icon-telegram.svg" alt="Telegram"></a>
           </li>
-          <li class="header__navbar_elem">
+          <li class="header__navbar_elem -select">
             <ul class="header__navbar_select">
               <li class="active" data-language="ru">RU</li>
               <li data-language="en">EN</li> 
             </ul>
+          </li>
+          <li class="header__navbar_elem d-lg-none -burger">
+            <button class="header__navbar_button">
+              <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram">
+            </button>
           </li>
         </ul>
       </div>
@@ -58,7 +62,7 @@
           <li class="header__navbar_elem">
             <img class="header__navbar_telegram" src="images/index/icon-telegram-mobile.svg" alt="Telegram">
           </li>
-          <li class="header__navbar_elem">
+          <li class="header__navbar_elem -burger">
             <button class="header__navbar_button">
               <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram">
             </button>
@@ -67,5 +71,19 @@
       </div>
     </div>
   </header>
+  <main>
+    <section class="hero">
+      <button type="button" class="btn btn-primary btn-block btn-catalog">В каталог</button>
+      <div class="container">
+        <div class="row">
+          <div class="col xl-6"></div>
+          <div class="col xl-6"></div>
+          
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>

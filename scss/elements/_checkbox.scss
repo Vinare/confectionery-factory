@@ -1,0 +1,17 @@
+.form-check-input {
+    width: 28px;
+    height: 28px;
+    background-color: #551414;
+    border-color: #551414;
+    
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #551414;
+    }
+
+    &:checked {
+        background-color: #551414;
+        border-color: #551414;
+    }
+}

@@ -1,0 +1,38 @@
+$mobile-breakpoint: 768px;
+$primary-color: #551414;
+
+.form-control {
+  border: 1px solid $primary-color;
+  border-radius: 24px;
+  color: $primary-color;
+  font-family: "Geologica";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  padding: 9px 43px;
+
+  &:focus {
+    color: $primary-color;
+    background-color: transparent;
+    border-color: $primary-color;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $primary-color; 
+    font-family: "Geologica";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 14px;
+    padding: 5px 18px;
+
+    &::placeholder {
+        font-size: 14px;
+    }
+  }
+}
