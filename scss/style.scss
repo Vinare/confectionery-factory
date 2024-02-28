@@ -3,8 +3,14 @@
 @import './variables';
 @import './interface';
 
+//Elements 
+@import './elements/button';
+@import './elements/checkbox';
+@import './elements/input';
+
 // SECTIONS
 @import './sections/header';
+@import './sections/hero';
 @import './sections/footer';
 
 
