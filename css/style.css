@@ -336,6 +336,12 @@ template {
   font-style: normal;
   font-display: swap;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 @media (min-width: 1600px) {
   .container {
     max-width: 1344px;
@@ -344,6 +350,8 @@ template {
 
 main {
   background: url("../images/index/main-bgd.png"), #F4E7DA;
+  position: relative;
+  flex-grow: 1;
 }
 
 .btn {
@@ -484,6 +492,7 @@ main {
 }
 .btn.btn-outline.-colored {
   border: 4px solid #e54839;
+  color: #E54839;
 }
 .btn.btn-outline.-colored.active, .btn.btn-outline.-colored:hover {
   border: 4px solid #e54839;
@@ -509,13 +518,14 @@ main {
   width: 100%;
 }
 .btn.btn-catalog {
-  width: 504px;
-  height: 84px;
-  transform: rotate(-90deg);
-  border-radius: 400px 400px 0 0 !important;
-  padding: 19px 71px 10px;
-  position: absolute;
-  top: 192px;
+  width: 84px;
+  height: 503px;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  border-radius: 0 400px 400px 0 !important;
+  padding: 71px 19px 71px 10px;
+  position: fixed;
+  top: 187px;
   right: 0;
 }
 .btn.btn-catalog::before {
@@ -838,4 +848,159 @@ main {
   background-image: url("../../images/index/circle-desktop.png");
   background-position: top 100px left -288px;
   background-repeat: no-repeat;
+  padding-top: 170px;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__image {
+  display: none;
+}
+.hero__image.active {
+  display: inline;
+}
+.hero__image.-cookies, .hero__image.-candies-in-box {
+  width: 545px;
+  height: 536px;
+}
+.hero__slider {
+  width: 708px;
+  height: 503px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__slider_wrapper {
+  display: flex;
+  align-items: center;
+}
+.hero__slider_logo {
+  justify-content: center;
+  display: flex;
+}
+.hero__slider_tabs {
+  display: flex;
+  row-gap: 32px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #E54839;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Geologica";
+}
+.footer-links a img {
+  max-height: 27px;
+}
+.footer-links__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.footer-links__title.-contacts {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .footer-links__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  .footer-links__title.-contacts {
+    margin-bottom: 20px;
+  }
+}
+.footer-links__item {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 33px;
+}
+.footer-links__item--icon {
+  width: 55px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+@media (max-width: 768px) {
+  .footer-links__item {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+  }
+  .footer-links__item--icon {
+    width: 40px;
+    margin-right: 0;
+    margin-left: 4px;
+  }
+  .footer-links__item--icon img {
+    width: 40px;
+  }
+  .footer-links__item span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer-links__social {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .footer-links__social a {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer-links.-right {
+    align-items: flex-end;
+  }
+}
+.footer-logo {
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo img {
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.footer-logo-description {
+  color: #FFFFFF;
+  font-family: Geologica;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .footer-logo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .footer-logo img {
+    max-width: 164px;
+  }
 }/*# sourceMappingURL=style.css.map */

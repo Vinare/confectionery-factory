@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   @media (min-width: 1600px) {
     max-width: 1344px;
@@ -6,4 +12,6 @@
 
 main {
   background: url('../images/index/main-bgd.png'), $background;
+  position: relative;
+  flex-grow: 1;
 }

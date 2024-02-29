@@ -2,4 +2,52 @@
   background-image: url('../../images/index/circle-desktop.png');
   background-position: top 100px left -288px;
   background-repeat: no-repeat;
+  padding-top: 170px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__image {
+    display: none;
+
+    &.active {
+      display: inline;
+    }
+
+    &.-cookies, &.-candies-in-box {
+      width: 545px;
+      height: 536px;
+    }
+  }
+
+  &__slider {
+    width: 708px;
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &_wrapper {
+      display: flex;
+      align-items: center;
+    }
+    
+    &_logo {
+      justify-content: center;
+      display: flex;
+    }
+
+    &_tabs {
+      display: flex;
+      row-gap: 32px;
+      column-gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+  }
 }

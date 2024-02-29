@@ -158,6 +158,7 @@ $secondary-color: #5514141a;
 
     &.-colored {
       border: 4px solid $primary-color;
+      color: $orange;
 
       &.active,
       &:hover {
@@ -185,13 +186,14 @@ $secondary-color: #5514141a;
   }
 
   &.btn-catalog {
-    width: 504px;
-    height: 84px;
-    transform: rotate(-90deg);
-    border-radius: 400px 400px 0 0 !important;
-    padding: 19px 71px 10px;
-    position: absolute;
-    top: 192px;
+    width: 84px;
+    height: 503px;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    border-radius: 0 400px 400px 0 !important;
+    padding: 71px 19px 71px 10px;
+    position: fixed;
+    top: 187px;
     right: 0;
 
     &::before {
