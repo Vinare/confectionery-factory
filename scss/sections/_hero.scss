@@ -3,6 +3,7 @@
   background-position: top 100px left -288px;
   background-repeat: no-repeat;
   padding-top: 170px;
+  padding-bottom: 250px;
 
   &-wrapper {
     display: flex;
@@ -39,6 +40,7 @@
     &_logo {
       justify-content: center;
       display: flex;
+      margin-bottom: 60px;
     }
 
     &_tabs {
@@ -50,4 +52,6 @@
 
     }
   }
+
+  
 }

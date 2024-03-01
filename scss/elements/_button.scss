@@ -187,13 +187,13 @@ $secondary-color: #5514141a;
 
   &.btn-catalog {
     width: 84px;
-    height: 503px;
+    height: 504px;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     border-radius: 0 400px 400px 0 !important;
     padding: 71px 19px 71px 10px;
     position: fixed;
-    top: 187px;
+    top: 273px;
     right: 0;
 
     &::before {
@@ -206,5 +206,16 @@ $secondary-color: #5514141a;
       }
 
     }
+
+    @media (max-width: 1550px) {
+    
+    
+     top: 126px;
+    
+    
+  
+  }
   }  
+
+  
 }

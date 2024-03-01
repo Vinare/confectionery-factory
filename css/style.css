@@ -354,6 +354,16 @@ main {
   flex-grow: 1;
 }
 
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+
+.stop {
+  position: relative;
+  z-index: 101;
+}
+
 .btn {
   border: 1px solid #e54839;
   font-family: "Geologica", sans-serif;
@@ -519,13 +529,13 @@ main {
 }
 .btn.btn-catalog {
   width: 84px;
-  height: 503px;
+  height: 504px;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   border-radius: 0 400px 400px 0 !important;
   padding: 71px 19px 71px 10px;
   position: fixed;
-  top: 187px;
+  top: 273px;
   right: 0;
 }
 .btn.btn-catalog::before {
@@ -533,6 +543,11 @@ main {
 }
 .btn.btn-catalog:hover::after {
   display: none;
+}
+@media (max-width: 1550px) {
+  .btn.btn-catalog {
+    top: 126px;
+  }
 }
 
 .form-check-input {
@@ -849,6 +864,7 @@ main {
   background-position: top 100px left -288px;
   background-repeat: no-repeat;
   padding-top: 170px;
+  padding-bottom: 250px;
 }
 .hero-wrapper {
   display: flex;
@@ -878,6 +894,7 @@ main {
 .hero__slider_logo {
   justify-content: center;
   display: flex;
+  margin-bottom: 60px;
 }
 .hero__slider_tabs {
   display: flex;
