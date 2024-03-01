@@ -15,3 +15,13 @@ main {
   position: relative;
   flex-grow: 1;
 }
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+
+.stop {
+  position: relative;
+  z-index: 101;
+}
