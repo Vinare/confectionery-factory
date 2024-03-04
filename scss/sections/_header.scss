@@ -283,6 +283,7 @@
         &.-burger {
           padding-top: 9px;
           padding-bottom: 9px;
+          padding-right: 0;
         }
       }
 
@@ -337,7 +338,55 @@
           top: calc(50% - 11px);
         }
       }
+
+      &_elem {
+        flex-shrink: 0;
+      }
     }
 
   }
+
+  @media(max-width: 480px) {
+    height: 48px;
+
+    &__logo {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      img {
+        width: 62px;
+        height: 32px;
+      }
+    }
+
+    &__navbar {
+      &.-right {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      &_search {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      &_elem {
+        line-height: 0;
+
+        &.-telegram {
+          padding-top: 0;
+          padding-bottom: 0;
+
+          img {
+            max-height: 24px;
+          }
+        }
+
+        &.-burger {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  } 
 }

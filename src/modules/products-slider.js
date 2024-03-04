@@ -17,7 +17,7 @@ export const productsSlider = (sliderSelector) => {
             gap: 24,
             focus: 1,
         },
-        991: {
+        992: {
             perPage: 3,
             gap: 24,
             focus: 1,
