@@ -1,5 +1,6 @@
 @import 'normalize';
 @import 'fonts';
+@import 'utils';
 @import './variables';
 @import './interface';
 
@@ -7,11 +8,19 @@
 @import './elements/button';
 @import './elements/checkbox';
 @import './elements/input';
+@import './elements/title';
+@import './elements/cloud';
+@import './elements/product-card';
 
 // SECTIONS
 @import './sections/header';
-@import './sections/hero';
 @import './sections/footer';
+@import './sections/hero';
+@import './sections/presentation';
+@import './sections/partners';
+@import './sections/hits';
+@import './sections/new-products';
 
-
-
+// SLIDERS
+@import './sliders/tabs-in-line';
+@import './sliders/responsive-slider';

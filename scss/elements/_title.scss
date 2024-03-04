@@ -1,0 +1,44 @@
+.title {
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-text {
+    color: rgb(85, 20, 20);
+    font-family: TT Trailers Trial;
+    font-size: 124px;
+    font-weight: 700;
+    line-height: 85%;
+    letter-spacing: 2%;
+  }
+
+  &.-stars {
+    &::before {
+        content: "";
+        display: block;
+        width: 96px;
+        height: 92px;
+        position: absolute;
+        top: -58px;
+        left: -84px;
+        background-image: url('../../images//elements//title//title-stars.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-text {
+      font-size: 40px;
+    }
+
+    &.-stars {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
