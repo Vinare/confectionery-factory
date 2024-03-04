@@ -50,7 +50,8 @@ export const heroSlider = (delay = 4000) => {
 
   const autoplay = () => {
     interval = setInterval(() => {
-      if (activeIndex === tabs.length - 1) {
+      console.log(activeIndex);
+      if (activeIndex === 4) {
         activeIndex = 0;
       } else {
         activeIndex++;
