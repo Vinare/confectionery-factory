@@ -18,9 +18,9 @@ export const heroSlider = (delay = 4000) => {
     focus: "center",
     autoWidth: true,
     mediaQuery: "min",
-    gap: 10,
+    gap: 12,
     breakpoints: {
-      991: { destroy: true },
+      992: { destroy: true },
     },
   }).mount();
 
