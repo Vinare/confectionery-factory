@@ -1,31 +1,34 @@
+import Splide from "@splidejs/splide";
+
 export const productsSlider = (sliderSelector) => {
   const initSlider = () => {
-    new Swiper(sliderSelector, {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 12,
-      loop: true,
-      breakpoints: {
+    new Splide(sliderSelector, {
+        arrows: false,
+        pagination: false,
+        type: "loop",
+        focus: "center",
+        fixedWidth: 140,
+        mediaQuery: "min",
+        gap: 12,
+        breakpoints: {
         768: {
-          centeredSlides: false,
-          loop: false,
-          slidesPerView: 2,
-          spaceBetween: 24,
+            fixedWidth: null,
+            perPage: 2,
+            gap: 24,
+            focus: 1,
         },
         991: {
-          centeredSlides: false,
-          loop: false,
-          slidesPerView: 3,
-          spaceBetween: 24,
+            perPage: 3,
+            gap: 24,
+            focus: 1,
         },
         1400: {
-          centeredSlides: false,
-          loop: false,
-          slidesPerView: 4,
-          spaceBetween: 24,
+            perPage: 4,
+            gap: 24,
+            focus: 1,
+        }
         },
-      },
-    });
+      }).mount();
   };
 
   initSlider();

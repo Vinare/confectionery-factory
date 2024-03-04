@@ -8,5 +8,6 @@ languageSelect();
 tabSliders();
 searchInput();
 heroSlider();
-productsSlider('.products-slider');
-productsSlider('.new-products-slider');
+productsSlider(".products-slider");
+// productsSlider(".new-products-slider");
+
