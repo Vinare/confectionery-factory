@@ -1,57 +1,95 @@
 .hero {
-  background-image: url('../../images/index/circle-desktop.png');
+  background-image: url("../../images/index/circle-desktop.png");
   background-position: top 100px left -288px;
   background-repeat: no-repeat;
   padding-top: 170px;
-  padding-bottom: 250px;
+  padding-bottom: 200px;
 
   &-wrapper {
     display: flex;
     justify-content: space-between;
-    
   }
 
   &__image {
     display: none;
+    width: 100%;
+    max-width: 586px;
+    max-height: 446px;
 
     &.active {
       display: inline;
     }
 
-    &.-cookies, &.-candies-in-box {
-      width: 545px;
-      height: 536px;
+    &--wrapper {
+      height: 100%;
+    }
+
+    @media (max-width: 991px) {
+      width: 55%;
+
+      &--wrapper {
+        height: auto;
+        margin-top: 140px;
+        margin-bottom: 10px;
+      }
     }
   }
 
   &__slider {
-    width: 708px;
-    height: 503px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 100%;
 
-
-    &_wrapper {
-      display: flex;
-      align-items: center;
-    }
-    
     &_logo {
       justify-content: center;
       display: flex;
-      margin-bottom: 60px;
+
+      img {
+        max-width: 465px;
+      }
+
+      @media (max-width: 991px) {
+        position: absolute;
+        top: 24px;
+        left: calc(50% - 100px);
+        max-width: 200px;
+      }
     }
 
     &_tabs {
-      display: flex;
-      row-gap: 32px;
-      column-gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
+      .swiper {
+        padding-top: 60px;
 
+        &-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 32px;
+          column-gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        &-slide {
+          width: auto;
+        }
+
+        @media (max-width: 991px) {
+          padding-top: 50px;
+
+          &-wrapper {
+            flex-wrap: nowrap;
+            row-gap: normal;
+            column-gap: normal;
+            justify-content: normal;
+          }
+        }
+      }
     }
   }
 
-  
+  @media (max-width: 991px) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
 }

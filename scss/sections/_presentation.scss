@@ -1,0 +1,54 @@
+.presentation {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    &-title {
+        margin-bottom: 52px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-text {
+        color: rgb(0, 0, 0);
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 130%;
+
+        &--wrapper {
+            margin-bottom: 52px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+
+            &--wrapper {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &-cloud {
+        &:not(:last-child) {
+            margin-bottom: 53px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .btn {
+            width: 100%;
+        }
+    }
+}

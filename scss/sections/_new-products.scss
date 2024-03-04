@@ -1,0 +1,34 @@
+.new-products {
+    padding-top: 106px;
+    padding-bottom: 106px;
+
+    &-title {
+        margin-bottom: 52px;
+    }
+
+    .btn-mobile {
+        margin-top: 20px;
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .swiper-slide {
+            max-width: 140px;
+        }
+
+        &-title {
+            margin-bottom: 20px;
+
+            .btn {
+                display: none;
+            }
+        }
+
+        .btn-mobile {
+            display: block;
+        }
+    }
+}

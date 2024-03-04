@@ -14,23 +14,11 @@ $secondary-color: #5514141a;
     line-height: 130%;
     border-radius: 400px;
     padding: 19px 71px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: $primary-color;
-      border-radius: 400px;
-      transition: top 0.3s, right 0.3s, left 0.3s, bottom 0.3s;
-    }
+    transition: transform .3s;
 
     &:hover {
       border-color: $primary-color;
+      transform: scale(1.05);
 
       &::after {
         content: "";
@@ -43,13 +31,6 @@ $secondary-color: #5514141a;
         background-image: url("../images/elements/btn-hover.svg");
         background-repeat: no-repeat;
         background-size: contain;
-      }
-
-      &::before {
-        top: -4px;
-        right: -13px;
-        bottom: -4px;
-        left: -13px;
       }
     }
 
@@ -70,32 +51,23 @@ $secondary-color: #5514141a;
     }
 
     &.with-icon {
+      svg {
+        margin-left: 20px;
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        padding: 9px 11px;
+        border-radius: 50%;
+
+        span {
+          display: none;
+        }
         svg {
-            margin-left: 20px;
+          margin: 0;
+          max-width: 20px;
+          max-height: 20px;
         }
-
-        @media (max-width: $mobile-breakpoint) {
-            padding: 9px 11px;
-            border-radius: 50%;
-
-            &:hover {
-                &::before {
-                    top: -4px;
-                    right: -4px;
-                    bottom: -4px;
-                    left: -4px; 
-                }
-            }
-
-            span {
-                display: none;
-            }
-            svg {
-                margin: 0;
-                max-width: 20px;
-                max-height: 20px;
-            }
-        }
+      }
     }
   }
 
@@ -195,27 +167,26 @@ $secondary-color: #5514141a;
     position: fixed;
     top: 273px;
     right: 0;
+    transition: none;
 
     &::before {
       display: none;
     }
 
     &:hover {
+      transform: rotate(180deg);
+      
       &::after {
         display: none;
       }
-
     }
 
     @media (max-width: 1550px) {
-    
-    
-     top: 126px;
-    
-    
-  
-  }
-  }  
+      top: 126px;
+    }
 
-  
+    @media (max-width: 998px) {
+      display: none;
+    }
+  }
 }
