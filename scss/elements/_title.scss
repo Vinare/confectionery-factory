@@ -8,7 +8,7 @@
   &-text {
     color: rgb(85, 20, 20);
     font-family: TT Trailers Trial;
-    // font-size: 124px;
+    margin: 0;
     font-size: clamp(40px, 1.45rem + 5.25vw, 124px);
     font-weight: 700;
     line-height: 85%;
