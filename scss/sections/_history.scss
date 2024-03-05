@@ -1,0 +1,19 @@
+.history {
+    .title {
+        margin-bottom: 52px;
+    }
+
+    .cloud-top {
+        margin-bottom: 140px;
+    }
+
+    @media (max-width: 768px) {
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .cloud-top {
+            margin-bottom: 60px;
+        }
+    }
+}
