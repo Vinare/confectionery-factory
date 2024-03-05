@@ -25,6 +25,7 @@
     }
 
     @media (max-width: 991px) {
+
       width: 55%;
 
       &--wrapper {
@@ -135,6 +136,8 @@
 
 
   @media (max-width: 991px) {
+    background-position: top calc(100% - 230px) center;
+    background-size: 145%;
     padding-top: 28px;
     padding-bottom: 30px;
 
@@ -155,4 +158,10 @@
       }
     }
   }
+
+  @media (max-width: 767.99px) {
+    background-position: top calc(100% - 200px) center;
+  }
+
+
 }
