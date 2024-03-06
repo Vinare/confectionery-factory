@@ -9,8 +9,30 @@
 
     .title-text {
         color: rgba(229, 72, 57, 0.5);
+        position: relative;
 
         &.-active {
+            color: $orange;
+        }
+
+        &::before {
+            left: -150px;
+            bottom: 14px;
+
+            @media (max-width: 991px) {
+                left: -95px;
+                bottom: 10px;
+            }
+
+            @media (max-width: 768px) {
+                left: -65px;
+                bottom: 8px;
+            }
+        }
+    }
+
+    &.-active {
+        .title-text {
             color: $orange;
         }
     }

@@ -1,0 +1,53 @@
+.-rabbit {
+  &::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+
+    @media (max-width: 991px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (max-width: 768px) {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  &.-rabbit-1 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-1.png");
+    }
+  }
+
+  &.-rabbit-2 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-2.png");
+    }
+  }
+  &.-rabbit-3 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-3.png");
+    }
+  }
+  &.-rabbit-4 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-4.png");
+    }
+  }
+  &.-rabbit-5 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-5.png");
+    }
+  }
+  &.-rabbit-6 {
+    &::before {
+      background-image: url("../../images/elements/rabbits/rabbit-6.png");
+    }
+  }
+}

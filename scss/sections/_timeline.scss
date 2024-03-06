@@ -23,12 +23,35 @@
     }
 
     &--left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       flex-basis: 50%;
       border-right: 2px solid rgba(229, 72, 57, 0.5);
       padding-right: 93px;
 
       .timeline-item__title {
         text-align: right;
+        position: relative;
+
+        &.-rabbit {
+            &::before {
+                left: -150px;
+                bottom: 14px;
+    
+                @media (max-width: 991px) {
+                    background-position: left bottom;
+                    left: auto;
+                    right: -95px;
+                    bottom: 10px;
+                }
+    
+                @media (max-width: 768px) {
+                    right: -65px;
+                    bottom: 0;
+                }
+            }
+        }
       }
       .timeline-item__text {
         text-align: right;
@@ -37,12 +60,34 @@
     }
 
     &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       flex-basis: 50%;
       border-left: 2px solid rgba(229, 72, 57, 0.5);
       padding-left: 93px;
 
       .timeline-item__title {
         text-align: left;
+        position: relative;
+
+        &.-rabbit {
+            &::before {
+                right: -150px;
+                bottom: 14px;
+                background-position: left bottom;
+    
+                @media (max-width: 991px) {
+                    right: -95px;
+                    bottom: 10px;
+                }
+    
+                @media (max-width: 768px) {
+                    right: -65px;
+                    bottom: 0;
+                }
+            }
+        }
       }
       .timeline-item__text {
         text-align: left;
@@ -78,6 +123,7 @@
       }
 
       &--left {
+        align-items: flex-start;
         width: 100%;
         border: none;
         padding: 0;
@@ -92,6 +138,7 @@
       }
 
       &--right {
+        align-items: flex-start;
         width: 100%;
         border: none;
         padding: 0;
@@ -100,7 +147,6 @@
           text-align: left;
         }
         .timeline-item__text {
-          text-align: left;
           padding: 0;
         }
       }
@@ -115,28 +161,15 @@
 
   @media (max-width: 768px) {
     &-item {
-        &__title {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 85%;
-        }
-        &__text {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 130%;
-        }
-      &--left {
-        .timeline-item__title {
-        }
-        .timeline-item__text {
-        }
+      &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 85%;
       }
-
-      &--right {
-        .timeline-item__title {
-        }
-        .timeline-item__text {
-        }
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
       }
     }
   }

@@ -17,5 +17,7 @@ export const ourTime = () => {
     }).mount();
   };
 
-  initSlider();
+  if (document.querySelector('.our-time__slider')) {
+    initSlider();
+  }
 };
