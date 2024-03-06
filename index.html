@@ -79,7 +79,8 @@
   </header>
 
   <main>
-    <button type="button" id="aside" class="btn btn-primary btn-block btn-catalog d-none d-md-block">В каталог</button>
+    <a href="#" type="button" id="aside" class="btn btn-primary btn-block btn-catalog d-none d-md-block">В каталог</a>
+    <a href="#" class="button-catalog-mobile d-sm-block d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
 
     <section class="hero">
       <div class="container">
@@ -147,7 +148,6 @@
     </section>
 
     <section class="presentation">
-      <a href="#" class="button-catalog-mobile d-none d-md-block"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
   
       <div class="container">
         <div class="row">
@@ -450,6 +450,28 @@
           <div class="col">
             <button type="button" class="btn btn-primary btn-block btn-mobile">Больше</button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <h2 class="feedback-title title-text">Обратная связь</h2>
+        <div class="row feedback-wrapper">
+          <div class="col">
+          </div>
+          <div class="col">
+            <form class="feedback-form d-flex flex-column" action="">
+              <input type="text" class="form-control" placeholder="Имя">
+              <input type="tel" class="form-control" placeholder="Номер телефона ">
+              <input type="email" class="form-control" placeholder="Почта">
+              <div class="feedback-form__ckeckbox-group">
+                <input class="form-check-input" type="checkbox" checked>
+                <p class="form-check-consent ">Согласен(а) на обработку <a href="http://" target="_blank" rel="noopener noreferrer">персональных данных</p></a>
+              </div>
+
+            </form>
+          </div>
+
         </div>
       </div>
     </section>

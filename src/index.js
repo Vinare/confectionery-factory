@@ -3,11 +3,13 @@ import { searchInput } from "./modules/search-input";
 import { heroSlider } from "./modules/hero-slider";
 import { productsSlider } from "./modules/products-slider";
 import { ourTime } from "./modules/ourTime";
+import { buttonCatalog } from "./modules/button-catalog";
 
 languageSelect();
 searchInput();
 heroSlider();
 productsSlider(".products-slider");
 productsSlider(".new-products-slider");
-ourTime()
+ourTime();
+buttonCatalog();
 

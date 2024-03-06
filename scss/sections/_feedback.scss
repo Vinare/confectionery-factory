@@ -1,0 +1,25 @@
+.feedback {
+  &-wrapper {
+    padding-top: 106px;
+    padding-bottom: 212px;
+    background-image: url('../../images/index/feedback-bgd.png');
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+  }
+
+  &-title {
+    margin-bottom: 52px;
+  }
+
+  &-form {
+    input {
+      background-color: transparent;
+    }
+
+    &__ckeckbox {
+      &-group {
+        display: flex;
+      }
+    }
+  }
+}

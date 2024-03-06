@@ -11,6 +11,10 @@ $primary-color: #551414;
   line-height: 130%;
   padding: 9px 43px;
 
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
   &:focus {
     color: $primary-color;
     background-color: transparent;
