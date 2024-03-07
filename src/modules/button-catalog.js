@@ -1,13 +1,18 @@
 export const buttonCatalog = () => {
 let timeoutId;
-let initialButtonWidth = '0'
-let buttonWidth = '-36px';
-let buttonCatalog = document.querySelector(".btn-catalog");
+let buttonWidth;
+
+const initialButtonWidth = '0';
+const buttonSmall = '-36px';
+const buttonLarge = '-50px';
+const buttonCatalog = document.querySelector(".btn-catalog");
 
 const hide = () => {
   if (buttonCatalog) {
     buttonCatalog.classList.remove("animate-opacity");
+    buttonWidth = window.innerWidth <= 1500 ? buttonSmall : buttonLarge;
     buttonCatalog.style.right = buttonWidth;
+    console.log(buttonCatalog.style.right);
   }
 };
 

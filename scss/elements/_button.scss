@@ -9,7 +9,7 @@ $secondary-color: #5514141a;
 
   &.btn-primary {
     background-color: $primary-color;
-    font-size: 32px;
+    font-size: clamp(18px, 0.95rem + 0.88vw, 32px);
     font-weight: 400;
     line-height: 130%;
     border-radius: 400px;
@@ -46,7 +46,7 @@ $secondary-color: #5514141a;
     }
 
     @media (max-width: $mobile-breakpoint) {
-      font-size: 18px;
+      // font-size: 18px;
       padding: 9px 33px;
 
       &:hover {
@@ -161,11 +161,21 @@ $secondary-color: #5514141a;
 
   &.btn-block {
     width: 100%;
+
+    &.-submit-button {
+      &:hover {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 
   &.btn-catalog {
     width: 84px;
     height: 504px;
+    align-items: flex-start;
+    justify-content: center;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     border-radius: 0 400px 400px 0 !important;

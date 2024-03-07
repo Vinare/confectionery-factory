@@ -52,7 +52,6 @@ export const heroSlider = (delay = 4000) => {
   
     const autoplay = () => {
       interval = setInterval(() => {
-        console.log(activeIndex);
         if (activeIndex === 4) {
           activeIndex = 0;
         } else {

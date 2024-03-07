@@ -1,12 +1,12 @@
 $mobile-breakpoint: 768px;
-$primary-color: #551414;
+$brown: #551414;
 
 .form-control {
-  border: 1px solid $primary-color;
+  border: 1px solid $brown;
   border-radius: 24px;
-  color: $primary-color;
+  color: $brown;
   font-family: "Geologica";
-  font-size: 32px;
+  font-size: clamp(14px, 0.65rem + 1.13vw, 32px);
   font-weight: 400;
   line-height: 130%;
   padding: 9px 43px;
@@ -16,27 +16,27 @@ $primary-color: #551414;
   }
 
   &:focus {
-    color: $primary-color;
+    color: $brown;
     background-color: transparent;
-    border-color: $primary-color;
+    border-color: $brown;
     outline: none;
     box-shadow: none;
   }
 
   &::placeholder {
-    color: $primary-color; 
+    color: $brown; 
     font-family: "Geologica";
-    font-size: 32px;
+    font-size: clamp(14px, 0.65rem + 1.13vw, 32px);
     font-weight: 400;
     line-height: 130%;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    font-size: 14px;
+    // font-size: 14px;
     padding: 5px 18px;
 
-    &::placeholder {
-        font-size: 14px;
-    }
+    // &::placeholder {
+    //     font-size: 14px;
+    // }
   }
 }

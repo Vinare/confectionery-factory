@@ -1,17 +1,29 @@
 .form-check-input {
     width: 28px;
     height: 28px;
-    background-color: #551414;
-    border-color: #551414;
+    background-color: $brown;
+    border-color: $brown;
     
     &:focus {
         outline: none;
         box-shadow: none;
-        border-color: #551414;
+        border-color: $brown;
     }
 
     &:checked {
-        background-color: #551414;
-        border-color: #551414;
+        background-color: $brown;
+        border-color: $brown;
     }
+
+    @media(max-width: 767.99px) {  
+        width: 22px;
+        height: 22px;
+    }
+
+    @media(max-width: 480px) {  
+        width: 20px;
+        height: 20px;
+    }
+
+    
 }
