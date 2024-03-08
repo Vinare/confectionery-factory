@@ -10,6 +10,8 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="./css/custom_bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.3.4" defer></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
   <script src="js/main.js" defer></script>
   <title>Кондитерская фабрика</title>
 </head>
@@ -80,7 +82,14 @@
 
   <main>
     <a href="#" type="button" id="aside" class="btn btn-primary btn-block btn-catalog d-none d-md-inline-flex">В каталог</a>
-    <a href="#" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
+    <!-- <a href="#" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a> -->
+    <a href="#top" id="back-to-top" class="back-to-top" title="Back to top">
+      <svg width="23.808594" height="10.805359" viewBox="0 0 23.8086 10.8054" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs/>
+      <path id="Vector 76" d="M1.47754 10.57L1.47461 10.5981C1.08447 10.9176 0.526367 10.8618 0.207031 10.4714C-0.112305 10.0809 -0.0566406 9.52312 0.333984 9.20364L0.361816 9.20647L1.47754 10.57ZM23.4468 9.20647L23.4746 9.20364C23.8652 9.52312 23.9209 10.0809 23.6016 10.4714C23.2822 10.8618 22.7241 10.9176 22.334 10.5981L22.3311 10.57L23.4468 9.20647Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+      <path id="Vector 76" d="M0.904297 9.90089L11.9043 0.900894L22.9043 9.90089" stroke="#E54839" stroke-opacity="1.000000" stroke-width="1.801763" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </a>
 
     <section class="hero">
       <div class="container">
@@ -148,7 +157,7 @@
     </section>
 
     <section class="presentation">
-  
+      <a href="#" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-8">
@@ -530,7 +539,7 @@
             <p class="footer-logo-description d-none d-lg-block">Создано в «Site Creative»</p>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </footer>
 </body>

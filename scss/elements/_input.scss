@@ -1,4 +1,4 @@
-$mobile-breakpoint: 768px;
+$mobile-breakpoint: 767.99px;
 $brown: #551414;
 
 .form-control {
@@ -38,5 +38,15 @@ $brown: #551414;
     // &::placeholder {
     //     font-size: 14px;
     // }
+  }
+
+  @media(max-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &[type="email"] {
+      margin-bottom: 12px;
+    }
   }
 }

@@ -219,8 +219,10 @@ $secondary-color: #5514141a;
 }
 
 .button-catalog-mobile {
-  position: fixed;
-  bottom: 17%;
+  // position: fixed;
+  position: absolute;
+  // bottom: 17%;
+  top: 8px;
   right: 2%;
   z-index: 10;
 
@@ -229,17 +231,57 @@ $secondary-color: #5514141a;
   }
 
   @media(max-width: 575.99px) {
-    bottom: 15%;
+    // bottom: 15%;
+    top: -4px;
   }
 
   @media(max-width: 480px) {
-    bottom: 26%;
+    // bottom: 26%;
+    top: -9px;
     right: 7px;
   }
 
   @media(max-width: 390px) {
-    bottom: 32%;
+    // bottom: 32%;
+    top: -17px;
+  }
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 41%;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0.9px solid rgb(229, 72, 57);
+  border-radius: 22.07px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all .5s;
+
+  svg {
+    path {
+      transition: stroke .5s;
+    }
+  }
+
+  &:hover {
+    background: $orange;
+    text-decoration: none;
+
+    svg {
+      path {
+        stroke: $white;
+      }
+    }
+
   }
 
   
 }
+
