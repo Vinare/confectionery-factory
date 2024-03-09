@@ -1,38 +1,42 @@
 export const buttonCatalog = () => {
-let timeoutId;
-let buttonWidth;
+  const heroSection = document.querySelector(".hero");
+  const buttonCatalog = document.querySelector(".btn-catalog");
 
-const initialButtonWidth = '0';
-const buttonSmall = '-36px';
-const buttonLarge = '-50px';
-const buttonCatalog = document.querySelector(".btn-catalog");
+  let timeoutId;
+  let isOpacity = false;
 
-const hide = () => {
-  if (buttonCatalog) {
-    buttonCatalog.classList.remove("animate-opacity");
-    buttonWidth = window.innerWidth <= 1500 ? buttonSmall : buttonLarge;
-    buttonCatalog.style.right = buttonWidth;
-    console.log(buttonCatalog.style.right);
-  }
-};
+  const createObserver = () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            buttonCatalog.classList.remove("animate-opacity");
+          } else {
+            buttonCatalog.classList.add("animate-opacity");
+          }
+        });
+      },
+      {
+        threshold: 0,
+      }
+    );
 
-buttonCatalog.addEventListener('mouseover', () => {
-    buttonCatalog.style.right = initialButtonWidth;
-});
+    observer.observe(heroSection);
+  };
 
-buttonCatalog.addEventListener("mouseout", () => {
-  buttonCatalog.style.right = buttonWidth;
-});
+  createObserver();
 
+  window.addEventListener('scroll', () => {
+    clearTimeout(timeoutId)
 
-window.addEventListener(
-  "scroll",
-  () => {
-    if (buttonCatalog) {
-      buttonCatalog.classList.add("animate-opacity");
-      timeoutId = setTimeout(hide, 700);
+    if (!isOpacity) {
+      buttonCatalog.style.opacity = .5
+      isOpacity = true
     }
-  },
-  false
-);
-}
+
+    timeoutId = setTimeout(() => {
+      buttonCatalog.style.opacity = 1
+      isOpacity = false
+    }, 500)
+  })
+};

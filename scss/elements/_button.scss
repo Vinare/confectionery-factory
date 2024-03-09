@@ -183,16 +183,19 @@ $secondary-color: #5514141a;
     position: fixed;
     top: 273px;
     right: 0;
-    transition: all .3s ease-out;
     z-index: 10;
     opacity: 1;
+    transition: right 0.3s ease-out;
 
     &.animate-opacity {
-      opacity: 0.5;
-      right: -36px;
-
+      right: -60px;
+    
       &:hover {
-        opacity: 1;
+        right: 0;
+      }
+
+      &:not(:hover) {
+        transition-delay: .5s;
       }
     }
 
@@ -214,6 +217,10 @@ $secondary-color: #5514141a;
       padding: 71px 18px 71px 10px;
       font-size: 24px;
       top: 126px;
+
+      &.animate-opacity {
+        right: -36px;
+      }
     }
   }
 }
