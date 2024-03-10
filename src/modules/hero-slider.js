@@ -2,7 +2,7 @@ import Splide from "@splidejs/splide";
 
 export const heroSlider = (delay = 4000) => {
   const heroWrapper = document.querySelector(".hero-wrapper");
-  const tabWrapper = document.querySelector('.hero__slider_tabs')
+  const tabWrapper = document.querySelector('.hero__slider_tabs');
 
   if (heroWrapper) {
     const images = heroWrapper.querySelectorAll(".hero__image");
@@ -12,7 +12,7 @@ export const heroSlider = (delay = 4000) => {
     let interval;
     let tabSlider;
   
-    tabSlider = new Splide(".splide", {
+    tabSlider = new Splide(".hero__slider_tabs--slider", {
       arrows: false,
       pagination: false,
       // clones: 0,
