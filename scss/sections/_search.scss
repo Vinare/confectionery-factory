@@ -1,0 +1,45 @@
+.search {
+  padding-bottom: 212px;
+
+  &-title {
+    margin-bottom: 52px;
+  }
+  
+  &-description {
+    display: block;
+    margin-bottom: 40px;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+
+  &-control {
+    padding: 20px 44px;
+  }
+
+  &-cards {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 767.99px) {
+    padding-bottom: 60px;
+    
+    &-title {
+      margin-bottom: 20px;
+    }
+    
+    &-description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    &-control {
+      padding: 10px 20px;
+    }
+  
+    &-cards {
+      padding-top: 60px;
+    }
+  }
+}
