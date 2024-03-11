@@ -1,51 +1,75 @@
 .catalog {
-    padding-bottom: 212px;
-    position: relative;
+  padding-bottom: 212px;
+  position: relative;
 
-    &-title {
-        margin-bottom: 52px;
+  &-title {
+    margin-bottom: 52px;
+  }
+
+  &__cards {
+    flex-grow: 1;
+  }
+
+  &-category__title {
+    color: $brown;
+    font-family: TT Trailers Trial;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 52px;
+  }
+
+  &__wrapper {
+    column-gap: 50px;
+  }
+
+  &__sidebar {
+    width: 286px;
+    flex-shrink: 0;
+  }
+
+  &__slider {
+    &_tabs--slider {
+      .splide__slide {
+        margin-bottom: 40px;
+      }
+
+      .splide__track {
+        overflow: visible;
+      }
+    }
+  }
+
+  @media (max-width: 991.99px) {
+    &__wrapper {
+      flex-direction: column;
     }
 
-    &__wrapper {
-        column-gap: 50px;
+    &-title {
+        margin-bottom: 0;
+    }
+
+    &-category__title {
+         display: none;
     }
 
     &__sidebar {
-        width: 286px;
-        flex-shrink: 0;
+      width: auto;
     }
 
     &__slider {
-        &_tabs--slider {
-            .splide__slide {
-                margin-bottom: 40px;
-            }
+      &_tabs--slider {
+        .splide__track {
+          overflow: hidden;
+          padding-top: 52px;
 
-            .splide__track {
-                overflow: visible;
+          button {
+            img {
+                display: none !important;
             }
+          }
         }
+      }
     }
-
-    // &__cards {
-
-    // }
-
-    @media (max-width: 991.99px) {
-        &__wrapper {
-            flex-direction: column;
-        }
-
-        &__sidebar {
-            width: auto;
-        }
-
-        &__slider {
-            &_tabs--slider {
-                .splide__track {
-                    overflow: hidden;
-                }
-            }
-        }
-    }
+  }
 }
