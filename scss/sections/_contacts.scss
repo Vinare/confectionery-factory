@@ -40,6 +40,19 @@
     }
   }
 
+  &-map {
+    height: 540px;
+
+    #map {
+        height: 100%;
+    }
+
+    &--icon-marker {
+        width: 89px;
+        height: 117px;
+    }
+  }
+
   @media (max-width: 767.99px) {
     &-title {
       margin-bottom: 20px;
