@@ -2,6 +2,7 @@ import Splide from "@splidejs/splide";
 
 export const catalogSlider = () => {
     const tabWrapper = document.querySelector('.catalog__slider_tabs');
+    const title = document.getElementById('catalog-category__title')
   
     if (tabWrapper) {
       let tabs = tabWrapper.querySelectorAll(".catalog-tab");
@@ -12,9 +13,10 @@ export const catalogSlider = () => {
       tabSlider = new Splide(".catalog__slider_tabs--slider", {
         arrows: false,
         pagination: false,
+        clones: 0,
         autoWidth: true,
         mediaQuery: "min",
-        start: activeIndex + 1,
+        start: activeIndex,
         padding: {left: 12, right: 12},
         gap: 12,
         breakpoints: {
@@ -26,24 +28,35 @@ export const catalogSlider = () => {
         tabs = tabWrapper.querySelectorAll(".catalog-tab");
     
         tabs.forEach((tab, tabIndex) => {
+          const datasetIndex = Number(tab.dataset.slideIdx)
+
           tab.classList.remove("active");
     
-          if (tabIndex === idx) {
+          if (datasetIndex === idx) {
+            const datasetTitle = tab.dataset.title
+            
             tab.classList.add("active");
+
+            if (tabSlider && !tabSlider.options.destroy) {
+              tabSlider.go(datasetIndex)
+            }
+
+            if (title) {
+              title.textContent = datasetTitle
+            }
           }
         });
-    
-        if (tabSlider && !tabSlider.options.destroy) {
-            tabSlider.go(idx)
-        }
       };
 
-      tabs.forEach((tab, tabIndex) => {
-        tab.addEventListener('click', () => {
+      tabWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('.catalog-tab')) {
+          const tab = e.target.closest('.catalog-tab')
+          const tabIndex = Number(tab.dataset.slideIdx)
+      
           activeIndex = tabIndex;
-
-          changeSlide(activeIndex)
-        })
+    
+          changeSlide(tabIndex);
+        }
       })
 
       changeSlide(activeIndex)
