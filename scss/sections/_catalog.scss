@@ -1,6 +1,6 @@
 .catalog {
   padding-bottom: 212px;
-  position: relative;
+
 
   &-title {
     margin-bottom: 100px;
@@ -21,6 +21,7 @@
 
   &__wrapper {
     column-gap: 50px;
+    position: relative;
   }
 
   &__sidebar {
@@ -72,4 +73,37 @@
       }
     }
   }
+
+  @media (max-width: 575.99px) {
+    &-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__slider {
+      &_tabs--slider {
+        .splide__track {
+          padding-top: 20px;
+        }
+
+        .splide__slide {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: 60px;
+    
+    &__slider {
+      &_tabs--slider {
+        .splide__slide {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
 }

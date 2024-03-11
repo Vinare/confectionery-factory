@@ -1,4 +1,4 @@
-$mobile-breakpoint: 768px;
+$mobile-breakpoint: 767.99px;
 $primary-color: #e54839;
 $secondary-color: #5514141a;
 
@@ -57,9 +57,9 @@ $secondary-color: #5514141a;
     }
 
     &.with-icon {
-      svg {
-        margin-left: 20px;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         &::after {
@@ -67,17 +67,56 @@ $secondary-color: #5514141a;
         }
       }
 
-      @media (max-width: $mobile-breakpoint) {
-        padding: 9px 11px;
-        border-radius: 50%;
+      svg {
+        margin-left: 20px;
+      }
+
+      @media (max-width: 1199.99px) {
+        padding: 10px 40px;
+
+        svg {
+          width: 28px;
+          height: auto;
+        }
+
+      }
+
+      @media (max-width: 991.99px) {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 40px;
 
         span {
-          display: none;
+          position: absolute;
+          color: $black;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 130%;
+          top: 40px;
+          min-width: 115px;
         }
+
         svg {
-          margin: 0;
-          max-width: 20px;
-          max-height: 20px;
+          width: 22px;
+          height: auto;
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        margin-top: 5px;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 575.99px) {
+        margin-top: 12px;
+        margin-left: 4px;
+
+        span {
+          left: 52px;
+          top: unset;
         }
       }
     }
@@ -271,30 +310,53 @@ $secondary-color: #5514141a;
 
 
 .back-to-top {
-  position: fixed;
-  display: none;
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   width: 67px;
   height: 67px;
-  right: 10px;
-  bottom: 212px;
+  right: -107px;
+  bottom: 0;
   border: 2px solid rgb(229, 72, 57);
   border-radius: 49px;
-
   cursor: pointer;
   z-index: 1000;
   transition: all .5s;
 
-  &.mobile {
-    bottom: 41%;
-    right: 12px;
+  @media(max-width: 1530px) {
+    right: 0;
+    bottom: -107px;
+  }
+
+  @media(max-width: 1199.99px) {
+    width: 57px;
+    height: 57px;
+
+    svg {
+      width: 33px;
+      height: auto;
+    }
+  }
+
+  @media(max-width: 767.99px) {
+    width: 47px;
+    height: 47px;
+    bottom: -97px;
+
+    svg {
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  @media(max-width: 480px) {
     width: 40px;
     height: 40px;
     border: 0.9px solid rgb(229, 72, 57);
     border-radius: 22.07px;
-
+    bottom: -46px;
   }
 
   svg {
