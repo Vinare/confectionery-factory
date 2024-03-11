@@ -1,3 +1,11 @@
 .product-page {
   padding-bottom: 212px;
+
+  &__description {
+    &-title {
+      margin-bottom: 52px;
+      font-size: clamp(40px, 1.8rem + 3.5vw, 96px);
+
+    }
+  }
 }

@@ -760,6 +760,7 @@ img {
   font-weight: 400;
   line-height: 130%;
   padding: 9px 43px;
+  background-color: transparent;
 }
 .form-control:not(:last-child) {
   margin-bottom: 24px;
@@ -1924,6 +1925,10 @@ img {
 .product-page {
   padding-bottom: 212px;
 }
+.product-page__description-title {
+  margin-bottom: 52px;
+  font-size: clamp(40px, 1.8rem + 3.5vw, 96px);
+}
 
 .history .title {
   margin-bottom: 52px;
@@ -2152,6 +2157,117 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 130%;
+  }
+}
+
+.search {
+  padding-bottom: 212px;
+}
+.search-title {
+  margin-bottom: 52px;
+}
+.search-description {
+  display: block;
+  margin-bottom: 40px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.search-control {
+  padding: 20px 44px;
+}
+.search-cards {
+  padding-top: 100px;
+}
+@media (max-width: 767.99px) {
+  .search {
+    padding-bottom: 60px;
+  }
+  .search-title {
+    margin-bottom: 20px;
+  }
+  .search-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .search-control {
+    padding: 10px 20px;
+  }
+  .search-cards {
+    padding-top: 60px;
+  }
+}
+
+.contacts {
+  padding-bottom: 100px;
+}
+.contacts-title {
+  margin-bottom: 52px;
+}
+.contacts-item {
+  padding: 40px 24px;
+  border-radius: 41px;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+.contacts-item__title {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.contacts-item__subtitle {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.contacts-item__text {
+  display: block;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.contacts-item__text:not(:last-child) {
+  margin-bottom: 8px;
+}
+.contacts-map {
+  height: 540px;
+}
+.contacts-map #map {
+  height: 100%;
+}
+.contacts-map--icon-marker {
+  width: 89px;
+  height: 117px;
+}
+@media (max-width: 767.99px) {
+  .contacts-title {
+    margin-bottom: 20px;
+  }
+  .contacts-item {
+    padding: 16px 12px;
+    border-radius: 22px;
+  }
+  .contacts-item__title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .contacts-item__subtitle {
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+  .contacts-item__text {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .contacts-item__text:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 

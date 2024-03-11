@@ -1,4 +1,8 @@
 export const yandexMap = () => {
+  const mapElement = document.getElementById("map")
+  if (!mapElement) {
+    return
+  }
   async function initMap() {
     let ymaps3 = window.ymaps3;
     let map;
@@ -8,21 +12,15 @@ export const yandexMap = () => {
     const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
 
     map = new YMap(
-      document.getElementById("map"),
+      mapElement,
       {
         location: {
-          center: [
-            46.00891089556499,
-            51.57077959379591
-        ],
+          center: [46.00891089556499, 51.57077959379591],
           zoom: 17,
         },
-        behaviors: ['drag', 'pinchZoom', 'mouseTilt']
+        behaviors: ["drag", "pinchZoom", "mouseTilt"],
       },
-      [
-        new YMapDefaultSchemeLayer({}),
-        new YMapDefaultFeaturesLayer({}),
-      ]
+      [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
     );
 
     const markerElement = document.createElement('img');
