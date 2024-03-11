@@ -7,6 +7,8 @@ import { buttonCatalog } from "./modules/button-catalog";
 import { smoothScroll } from "./modules/smoothScroll";
 import { toTopButton } from "./modules/to-top-button";
 import { catalogSlider } from "./modules/catalog-slider";
+import { searchDecl } from "./modules/search-decl";
+import { yandexMap } from "./modules/yandex-map";
 
 languageSelect();
 searchInput();
@@ -17,5 +19,6 @@ ourTime();
 buttonCatalog();
 smoothScroll();
 toTopButton();
-catalogSlider()
-
+catalogSlider();
+searchDecl();
+yandexMap();

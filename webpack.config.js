@@ -10,5 +10,8 @@ module.exports = {
     path: path.resolve(__dirname, "js"),
     clean: true,
   },
+  externals: {
+    ymaps3: "ymaps3",
+  },
   devtool: "inline-source-map",
 };
