@@ -29,7 +29,7 @@ export const yandexMap = () => {
     markerElement.style.height = '117px'
     markerElement.style.position = 'relative'
     markerElement.style.transform = 'translate(-50%, -50%)'
-    markerElement.src = '/images/icons/marker.png';
+    markerElement.src = './images/icons/marker.png';
     map.addChild(new YMapMarker({coordinates: [
         46.00829728258972,
         51.57158353822383
