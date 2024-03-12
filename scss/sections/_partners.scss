@@ -2,6 +2,10 @@
     padding-top: 106px;
     padding-bottom: 106px;
 
+    &-title {
+        margin-bottom: 52px;
+    }
+
     &-image {
         display: flex;
         align-items: center;
@@ -17,6 +21,10 @@
     @media (max-width: 768px) {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &-title {
+            margin-bottom: 20px;
+        }
 
         &-image {
             img {

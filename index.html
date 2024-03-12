@@ -19,13 +19,13 @@
     <div class="container">
       <div class="header-menu">
         <div class="header__navbar-wrapper">
-          <div class="header__logo">
+          <a href="/" class="header__logo">
             <img src="./images/index/logo-header-desktop.png" alt="Логотип">
-          </div>
+          </a>
           <ul class="header__navbar">
-            <li class="header__navbar_item"><a class="header__navbar_link" href="#">О компании</a></li>
-            <li class="header__navbar_item"><a class="header__navbar_link" href="#">Где купить</a></li>
-            <li class="header__navbar_item"><a class="header__navbar_link" href="#">Контакты</a></li>
+            <li class="header__navbar_item"><a class="header__navbar_link" href="#presentation-section">О компании</a></li>
+            <li class="header__navbar_item"><a class="header__navbar_link" href="#partners-section">Где купить</a></li>
+            <li class="header__navbar_item"><a class="header__navbar_link" href="#feedback-section">Контакты</a></li>
           </ul>
         </div>
         <ul class="header__navbar -right">
@@ -37,12 +37,12 @@
                 alt="Search">
             </div>
 
-            <img id="header-search-button" class="header__navbar_search" src="images/index/search-icon-mobile.svg"
+            <img id="header-search-button" class="header__navbar_search" src="./images/index/search-icon-mobile.svg"
               alt="Search">
           </li>
           <li class="header__navbar_elem -telegram">
             <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img
-                class="header__navbar_telegram" src="images/index/icon-telegram.svg" alt="Telegram"></a>
+                class="header__navbar_telegram" src="./images/index/icon-telegram.svg" alt="Telegram"></a>
           </li>
           <li class="header__navbar_elem -select">
             <ul class="header__navbar_select">
@@ -146,7 +146,7 @@
         </div>
     </section>
 
-    <section class="presentation">
+    <section class="presentation" id="presentation-section">
       <a href="#" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
       <div class="container">
         <div class="row">
@@ -200,8 +200,16 @@
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners-section">
       <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title partners-title -stars">
+              <h2 class="title-text">Где купить</h2>
+            </div>
+          </div>
+        </div>
+
         <div class="row gy-4 gy-md-6">
           <div class="col col-6 col-md-4">
             <div class="partners-image">
@@ -452,7 +460,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback-section">
       <div class="container">
         <h2 class="feedback-title title-text">Обратная связь</h2>
         <div class="row flex-column flex-lg-row align-items-lg-end align-items-xl-stretch">
@@ -484,22 +492,22 @@
       <div class="row">
         <div class="col col-6 col-lg-4 order-2">
           <div class="footer-links">
-            <a class="footer-links__title mb-4" href="https://google.com">Каталог</a>
+            <a class="footer-links__title mb-4" href="catalog.html">Каталог</a>
 
-            <a class="footer-links__item mb-2" href="https://google.com">Конфеты</a>
-            <a class="footer-links__item mb-2" href="https://google.com">Конфеты в коробках</a>
-            <a class="footer-links__item mb-2" href="https://google.com">Печенье</a>
-            <a class="footer-links__item mb-2" href="https://google.com">Вафли</a>
-            <a class="footer-links__item mb-2" href="https://google.com">Крекеры</a>
-            <a class="footer-links__item mb-2" href="https://google.com">Популярное</a>
-            <a class="footer-links__item" href="https://google.com">Новинки</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Конфеты</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Конфеты в коробках</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Печенье</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Вафли</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Крекеры</a>
+            <a class="footer-links__item mb-2" href="catalog.html">Популярное</a>
+            <a class="footer-links__item" href="catalog.html">Новинки</a>
           </div>
         </div>
         <div class="col col-6 col-lg-4 order-2">
           <div class="footer-links -right">
-            <a class="footer-links__title -contacts" href="https://google.com">О компании</a>
+            <a class="footer-links__title -contacts" href="about.html">О компании</a>
 
-            <a class="footer-links__title mb-4" href="https://google.com">Контакты</a>
+            <a class="footer-links__title mb-4" href="contacts.html">Контакты</a>
 
             <div class="footer-links__social">
               <a class="footer-links__item mb-2" href="https://google.com">
@@ -528,6 +536,10 @@
 
             <p class="footer-logo-description d-none d-lg-block">Создано в «Site Creative»</p>
           </div>
+        </div>
+
+        <div class="col-12 d-block d-lg-none order-4">
+          <p class="footer-logo-description">Создано в «Site Creative»</p>
         </div>
       </div> 
     </div>

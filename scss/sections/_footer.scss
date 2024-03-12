@@ -124,11 +124,21 @@ $mobile-breakpoint: 768px;
 
     @media (max-width: $tablet-breakpoint) {
       max-width: 100%;
+
+      &-description {
+        text-align: left;
+        margin-top: 20px;
+      }
     }
 
-    @media (max-width: $tablet-breakpoint) {
+    @media (max-width: $mobile-breakpoint) {
       img {
         max-width: 164px;
+      }
+
+      &-description {
+        font-size: 12px;
+        line-height: 15px;
       }
     }
   }
