@@ -9,6 +9,7 @@ import { toTopButton } from "./modules/to-top-button";
 import { catalogSlider } from "./modules/catalog-slider";
 import { searchDecl } from "./modules/search-decl";
 import { yandexMap } from "./modules/yandex-map";
+import { timeline } from "./modules/timeline";
 
 languageSelect();
 searchInput();
@@ -22,3 +23,4 @@ toTopButton();
 catalogSlider();
 searchDecl();
 yandexMap();
+timeline();
