@@ -33,13 +33,12 @@ export const timeline = () => {
             if (idx > activeIndex) {
               activeIndex = idx;
             }
-            if (idx < items.length - 1) {
-              i.classList.remove("-active");
-            }
+            i.classList.remove("-active");
           } else {
             if (idx < activeIndex) {
               activeIndex = idx;
             }
+            i.classList.remove("-active");
           }
           items[activeIndex].classList.add("-active");
         } else {
