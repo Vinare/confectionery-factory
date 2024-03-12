@@ -1,11 +1,123 @@
 .product-page {
   padding-bottom: 212px;
 
+  &-upper {
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    border-radius: 41px;
+    overflow: hidden;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
   &__description {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &_item {
+      color: $black;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
     &-title {
       margin-bottom: 52px;
       font-size: clamp(40px, 1.8rem + 3.5vw, 96px);
+    }
 
+    &-subtitle {
+      font-size: clamp(18px, 0.95rem + 0.88vw, 32px);
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 24px;
+
+      &.-request {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-text {
+      font-size: clamp(14px, 0.725rem + 0.75vw, 26px);
+      font-weight: 400;
+      line-height: 130%;
+      margin-bottom: 0;
+    }
+
+    &-tabs {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 52px;
+      gap: 24px;
+
+      button {
+        max-width: 286px;
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__details {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.-with-border {
+        border-bottom: 4px solid rgba(85, 20, 20, 0.1);
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1199.99px) {
+    &__description {
+      &_item {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-subtitle {
+        margin-bottom: 18px;
+
+        &.-request {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.99px) {
+    &-upper {
+      flex-direction: column;
+    }
+
+    &__image {
+      margin-bottom: 60px;
+
+      img {
+        height: 560px;
+        object-fit: cover;
+        object-position: 30% 31%;
+        
+      }
     }
   }
 }
