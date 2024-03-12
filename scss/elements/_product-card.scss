@@ -1,9 +1,11 @@
 .product-card {
+  display: block;
   border-radius: 44px;
   background: $white;
   padding: 28px 24px 40px;
   position: relative;
   height: 100%;
+  text-decoration: none;
 
   &__image {
     height: 260px;
