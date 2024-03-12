@@ -117,8 +117,10 @@
               <h2 class="title-text product-page__description-title">Конфеты «Фрут Бар»</h2>
               <div class="product-page__description_item">
                 <h3 class="product-page__description-subtitle">Описание</h3>
-                <p class="product-page__description-text">Конфеты «Фрут бар» - это сочетание кремовой начинки с фруктовой в шоколадной глазури.</p>
-                <p class="product-page__description-text d-none">Конфеты «Фрут бар» - это сочетание кремовой начинки с малиновой в шоколадной глазури с белым шоколадом и кокосовой стружкой.</p>
+                <p class="product-page__description-text">Конфеты «Фрут бар» - это сочетание кремовой начинки с
+                  фруктовой в шоколадной глазури.</p>
+                <p class="product-page__description-text d-none">Конфеты «Фрут бар» - это сочетание кремовой начинки с
+                  малиновой в шоколадной глазури с белым шоколадом и кокосовой стружкой.</p>
               </div>
               <div class="product-page__description_item">
                 <h3 class="product-page__description-subtitle">Вкус</h3>
@@ -129,7 +131,8 @@
               </div>
               <div class="product-page__description_item -request">
                 <h3 class="product-page__description-subtitle -request">Оставьте заявку на консультацию</h3>
-                <button type="button" class="btn btn-primary btn-block">Оставить заявку</button>
+                <button type="button" class="btn btn-primary btn-block feedback-btn" data-bs-toggle="modal"
+                  data-bs-target="#feedback-modal">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -137,41 +140,73 @@
         <div class="row">
           <div class="col">
             <!-- <div class="product-page__details"> -->
-              <ul class="product-page__details">
-                <li class="product-page__details_item -with-border">
-                  <strong class="product-page__description-subtitle mb-0">Наименование</strong>
-                  <span class="product-page__description-text">«Фрут бар» со вкусом апельсина</span>
-                </li>
-                <li class="product-page__details_item -with-border">
-                  <strong class="product-page__description-subtitle mb-0">Формат</strong>
-                  <span class="product-page__description-text">Вес</span>
-                </li>
-                <li class="product-page__details_item -with-border">
-                  <strong class="product-page__description-subtitle mb-0">Вес</strong>
-                  <span class="product-page__description-text">—</span>
-                </li>
-                <li class="product-page__details_item -with-border">
-                  <strong class="product-page__description-subtitle mb-0">Срок хранения (дней)</strong>
-                  <span class="product-page__description-text">270</span>
-                </li>
-                <li class="product-page__details_item mb-3">
-                  <strong class="product-page__description-subtitle mb-0">В гофрокоробе</strong>
-                </li>
-                <li class="product-page__details_item pb-0">
-                  <span class="product-page__description-text">Кол-во (шт.)</span>
-                  <span class="product-page__description-text">—</span>
-                </li>
-                <li class="product-page__details_item">
-                  <span class="product-page__description-text">Вес (кг.)</span>
-                  <span class="product-page__description-text">3,00</span>
-                </li>
-              </ul>
-              
+            <ul class="product-page__details">
+              <li class="product-page__details_item -with-border">
+                <strong class="product-page__description-subtitle mb-0">Наименование</strong>
+                <span class="product-page__description-text">«Фрут бар» со вкусом апельсина</span>
+              </li>
+              <li class="product-page__details_item -with-border">
+                <strong class="product-page__description-subtitle mb-0">Формат</strong>
+                <span class="product-page__description-text">Вес</span>
+              </li>
+              <li class="product-page__details_item -with-border">
+                <strong class="product-page__description-subtitle mb-0">Вес</strong>
+                <span class="product-page__description-text">—</span>
+              </li>
+              <li class="product-page__details_item -with-border">
+                <strong class="product-page__description-subtitle mb-0">Срок хранения (дней)</strong>
+                <span class="product-page__description-text">270</span>
+              </li>
+              <li class="product-page__details_item mb-3">
+                <strong class="product-page__description-subtitle mb-0">В гофрокоробе</strong>
+              </li>
+              <li class="product-page__details_item pb-0">
+                <span class="product-page__description-text">Кол-во (шт.)</span>
+                <span class="product-page__description-text">—</span>
+              </li>
+              <li class="product-page__details_item">
+                <span class="product-page__description-text">Вес (кг.)</span>
+                <span class="product-page__description-text">3,00</span>
+              </li>
+            </ul>
+
             <!-- </div> -->
           </div>
         </div>
       </div>
     </section>
+
+    <div class="feedback-modal-overlay">
+      <div class="feedback-modal">
+        <div class="feedback-modal__header">
+          <div class="title">
+            <h1 class="title-text">Обратная связь</h1>
+          </div>
+          
+          <div class="feedback-modal__close">
+            <img src="./images/icons/close-color.svg" alt="close">
+          </div>
+        </div>
+
+        <div class="feedback-modal__content">
+          <div class="feedback-modal__content-box">
+            <form class="feedback-form d-flex flex-column h-100 justify-content-between" action="">
+              <input type="text" class="form-control" placeholder="Имя">
+              <input type="tel" class="form-control" placeholder="Номер телефона ">
+              <input type="email" class="form-control" placeholder="Почта">
+              <div class="feedback-form__checkbox-group">
+                <input class="form-check-input feedback-form__checkbox" type="checkbox" checked>
+                <p class="feedback-form__consent">Принимаю <a href="http://" target="_blank" rel="noopener noreferrer">политику конфиденциальности</a> и согласен на обработку <a href="http://" target="_blank" rel="noopener noreferrer">персональных данных</a></p>
+              </div>
+              <button type="button" class="btn btn-primary btn-block -submit-button">Отправить</button>
+            </form>
+          </div>
+          <div class="feedback-modal__content-box">
+            <div class="feedback-modal__logo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">

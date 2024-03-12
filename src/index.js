@@ -10,6 +10,7 @@ import { catalogSlider } from "./modules/catalog-slider";
 import { searchDecl } from "./modules/search-decl";
 import { yandexMap } from "./modules/yandex-map";
 import { timeline } from "./modules/timeline";
+import { modal } from "./modules/modal";
 
 languageSelect();
 searchInput();
@@ -24,3 +25,4 @@ catalogSlider();
 searchDecl();
 yandexMap();
 timeline();
+modal();
