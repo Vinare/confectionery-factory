@@ -1,15 +1,17 @@
-.breadcrumbs-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.breadcrumbs {
+    &-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
 
-    @media(max-width: 991.99px) {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-  
+        @media(max-width: 991.99px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            }
+    
 
-    @media (max-width: 768px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        @media (max-width: 768px) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
     }
 }

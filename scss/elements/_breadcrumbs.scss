@@ -14,7 +14,7 @@
     a {
       text-decoration: none;
       color: #000000;
-      font-size: 26px;
+      font-size: clamp(12px, 0.575rem + 0.88vw, 26px);
       font-weight: 400;
       line-height: 130%;
       transition: color 0.3s;
@@ -31,7 +31,7 @@
 
     span {
       color: #000000;
-      font-size: 26px;
+      font-size: clamp(12px, 0.575rem + 0.88vw, 26px);
       font-weight: 400;
       line-height: 130%;
     }
@@ -57,13 +57,13 @@
 
     &-item {
       a {
-        font-size: 12px;
+        // font-size: 12px;
         font-weight: 400;
         line-height: 130%;
       }
 
       span {
-        font-size: 12px;
+        // font-size: 12px;
         font-weight: 400;
         line-height: 130%;
       }

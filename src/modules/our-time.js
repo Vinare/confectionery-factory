@@ -6,12 +6,16 @@ export const ourTime = () => {
       arrows: false,
       pagination: false,
       clones: 0,
-      type: "loop",
+      type: "slide",
+      wheel: true,
+      releaseWheel: true,
+      waitForTransition: true,
+      trimSpace: false,
       focus: "center",
       gap: 24,
       breakpoints: {
         767: {
-          destroy: true
+          destroy: true,
         },
       },
     }).mount();
