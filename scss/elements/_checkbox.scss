@@ -3,6 +3,7 @@
     height: 28px;
     background-color: $brown;
     border-color: $brown;
+    border-width: 2px;
     
     &:focus {
         outline: none;
@@ -14,10 +15,15 @@
         background-color: $brown;
         border-color: $brown;
     }
+    
+    &.-invalid {
+        border-color: $orange;
+    }
 
     @media(max-width: 767.99px) {  
         width: 22px;
         height: 22px;
+        border-width: 1px;
     }
 
     @media(max-width: 575.99px) {  
@@ -29,6 +35,4 @@
         width: 16px;
         height: 16px;
     }
-
-    
 }

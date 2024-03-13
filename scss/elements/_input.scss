@@ -2,7 +2,7 @@ $mobile-breakpoint: 767.99px;
 $brown: #551414;
 
 .form-control {
-  border: 1px solid $brown;
+  border: 2px solid $brown;
   border-radius: 24px;
   color: $brown;
   font-family: "Geologica";
@@ -32,13 +32,17 @@ $brown: #551414;
     line-height: 130%;
   }
 
+  &.-invalid {
+    border: 2px solid $orange;
+  }
+
   @media (max-width: $mobile-breakpoint) {
-    // font-size: 14px;
+    border-width: 1px;
     padding: 5px 18px;
 
-    // &::placeholder {
-    //     font-size: 14px;
-    // }
+    &.-invalid {
+      border-width: 1px;
+    }
   }
 
   @media(max-width: 480px) {

@@ -11,6 +11,7 @@ import { searchDecl } from "./modules/search-decl";
 import { yandexMap } from "./modules/yandex-map";
 import { timeline } from "./modules/timeline";
 import { modal } from "./modules/modal";
+import { formValidator } from "./modules/form-validator";
 
 languageSelect();
 searchInput();
@@ -26,3 +27,4 @@ searchDecl();
 yandexMap();
 timeline();
 modal();
+formValidator();
