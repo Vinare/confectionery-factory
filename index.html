@@ -10,6 +10,7 @@
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="./css/custom_bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="./js/main.js" defer></script>
   <title>Кондитерская фабрика</title>
 </head>
@@ -56,25 +57,60 @@
             </button>
           </li>
         </ul>
-      </div>
-      <div class="header-menu -mobile">
-        <div class="header__logo">
-          <img src="images/index/logo-header-mobile.png" alt="Логотип">
+        <div class="header-menu -mobile">
+          <ul class="header-menu__nav">
+            <li class="header-menu__item">
+              <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button collapsed header-menu__item_link -notunderlined" href="catalog.html" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Каталог
+                    </a>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="header-menu__accordion">
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Конфеты</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Конфеты в коробках</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Печенье</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Вафли</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Крекеры</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Хиты</a>
+                        </li>
+                        <li class="header-menu__accordion_item">
+                          <a class="header-menu__accordion_item_link" href="catalog.html">Новинки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="header-menu__item">
+              <a class="header-menu__item_link" href="catalog.html">О компании</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__item_link" href="catalog.html">Где купить</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__item_link" href="catalog.html">Контакты</a>
+            </li>
+          </ul>
         </div>
-        <ul class="header__navbar -right">
-          <li class="header__navbar_elem">
-            <img class="header__navbar_search" src="images/index/search-icon-mobile.svg" alt="Search">
-          </li>
-          <li class="header__navbar_elem">
-            <img class="header__navbar_telegram" src="images/index/icon-telegram-mobile.svg" alt="Telegram">
-          </li>
-          <li class="header__navbar_elem -burger">
-            <button class="header__navbar_button">
-              <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram">
-            </button>
-          </li>
-        </ul>
       </div>
+      
     </div>
   </header>
 
@@ -460,6 +496,7 @@
         </div>
       </div>
     </section>
+
     <section class="feedback" id="feedback-section">
       <div class="container">
         <h2 class="feedback-title title-text">Обратная связь</h2>
@@ -512,18 +549,18 @@
             <div class="footer-links__social">
               <a class="footer-links__item mb-2" href="https://google.com">
                 <div class="footer-links__item--icon">
-                  <img src="./images/icons/telegram.svg" alt="telegram">
+                  <img src="./images/icons/telegram.svg" class="footer-links__item_img -telegram" alt="telegram">
                 </div>
               </a>
               <a class="footer-links__item mb-2" href="https://google.com">
-                <div class="footer-links__item--icon">
-                  <img src="./images/icons/phone.svg" alt="phone">
+                <div class="footer-links__item--icon -phone">
+                  <img src="./images/icons/phone.svg" class="footer-links__item_img -phone" alt="phone">
                 </div>
                 <span>8 (8452) 24-50-77</span>
               </a>
               <a class="footer-links__item" href="https://google.com">
                 <div class="footer-links__item--icon">
-                  <img src="./images/icons/mail.svg" alt="mail">
+                  <img src="./images/icons/mail.svg" class="footer-links__item_img -mail" alt="mail">
                 </div>
                 <span>info@cf64.ru</span>
               </a>

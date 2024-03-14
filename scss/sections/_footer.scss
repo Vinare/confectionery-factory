@@ -67,10 +67,26 @@ $mobile-breakpoint: 768px;
         &--icon {
             width: 40px;
             margin-right: 0;
-            margin-left: 4px;
+            margin-left: 0;
+
+            &.-phone {
+              margin-left: 8px;
+            }
 
             img {
-                width: 40px;
+              &.-mail, &.-telegram {
+                width: 32px;
+              }
+
+              &.-phone {
+                width: 20px;
+              }
+
+              &.-telegram {
+                width: 33px;
+              }
+
+              
             }
         }
 

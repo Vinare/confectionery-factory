@@ -205,6 +205,10 @@
   @media(max-width: 1199.99px) {
     height: 83px;
 
+    &-menu {
+      height: 83px;
+    }
+
     &__navbar {
       padding-top: 27px;
       padding-bottom: 28px;
@@ -266,6 +270,61 @@
   }
 
   @media(max-width: 991.99px) {
+    &-menu {
+      position: relative;
+
+      &__item {
+        &_link {
+          background-color: transparent;
+          color: $brown;
+          font-family: 'TT Trailers Trial';
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 85%;
+          letter-spacing: 2%;
+          text-align: left;
+          text-decoration: none;
+          padding-top: 0;
+          padding-left: 0;
+
+          &.-notunderlined {
+            text-decoration: underline;;
+          }
+
+          &:focus {
+            box-shadow: none;
+
+          }
+
+          &::after {
+            background-image: url('/images/icons/mobile-menu-chevron.svg');
+            
+            background-size: 18px 10px;
+            margin-left: 8px;
+            margin-top: 13px;
+          }
+
+        }
+      }
+
+      &__nav {
+        padding-top: 20px;
+        padding-left: 20px;
+        list-style-type: none;
+      }
+
+      &.-mobile {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 83px;
+        width: 447px;
+        background-color: $white;
+        height: auto;
+      }
+    }
+
     &__navbar {
       display: none;
 
@@ -348,6 +407,10 @@
 
   @media(max-width: 480px) {
     height: 48px;
+
+    &-menu {
+      height: 100%;
+    }
 
     &__logo {
       padding-top: 8px;

@@ -1,165 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="./css/custom_bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="stylesheet" href="./css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
     <title>Спасибо!</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-menu">
-                <div class="header__navbar-wrapper">
-                    <div class="header__logo">
-                        <img src="images/index/logo-header-desktop.png" alt="Логотип">
-                    </div>
-                    <ul class="header__navbar">
-                        <li class="header__navbar_item"><a class="header__navbar_link" href="#">О компании</a></li>
-                        <li class="header__navbar_item"><a class="header__navbar_link" href="#">Где купить</a></li>
-                        <li class="header__navbar_item"><a class="header__navbar_link" href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <ul class="header__navbar -right">
-                    <li class="header__navbar_elem">
-                        <div class="header__navbar_search-input--wrapper">
-                            <input id="header-search-input" type="search" class="header__navbar_search-input"
-                                placeholder="Поиск">
-
-                            <img id="header-search-close" class="header__navbar_search--close"
-                                src="images/icons/close.svg" alt="Search">
-                        </div>
-
-                        <img id="header-search-button" class="header__navbar_search"
-                            src="images/index/search-icon-mobile.svg" alt="Search">
-                    </li>
-                    <li class="header__navbar_elem -telegram">
-                        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img
-                                class="header__navbar_telegram" src="images/index/icon-telegram.svg" alt="Telegram"></a>
-                    </li>
-                    <li class="header__navbar_elem -select">
-                        <ul class="header__navbar_select">
-                            <li class="active" data-language="ru">RU</li>
-                            <li data-language="en">EN</li>
-                        </ul>
-                    </li>
-                    <li class="header__navbar_elem d-lg-none -burger">
-                        <button class="header__navbar_button">
-                            <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram">
-                        </button>
-                    </li>
-                </ul>
+      <div class="container">
+        <div class="header-menu">
+          <div class="header__navbar-wrapper">
+            <div class="header__logo">
+              <img src="images/index/logo-header-desktop.png" alt="Логотип" />
             </div>
-            <div class="header-menu -mobile">
-                <div class="header__logo">
-                    <img src="images/index/logo-header-mobile.png" alt="Логотип">
-                </div>
-                <ul class="header__navbar -right">
-                    <li class="header__navbar_elem">
-                        <img class="header__navbar_search" src="images/index/search-icon-mobile.svg" alt="Search">
-                    </li>
-                    <li class="header__navbar_elem">
-                        <img class="header__navbar_telegram" src="images/index/icon-telegram-mobile.svg" alt="Telegram">
-                    </li>
-                    <li class="header__navbar_elem -burger">
-                        <button class="header__navbar_button">
-                            <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram">
-                        </button>
-                    </li>
-                </ul>
-            </div>
+            <ul class="header__navbar">
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="#">О компании</a>
+              </li>
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="#">Где купить</a>
+              </li>
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="header__navbar -right">
+            <li class="header__navbar_elem">
+              <div class="header__navbar_search-input--wrapper">
+                <input
+                  id="header-search-input"
+                  type="search"
+                  class="header__navbar_search-input"
+                  placeholder="Поиск"
+                />
+
+                <img
+                  id="header-search-close"
+                  class="header__navbar_search--close"
+                  src="images/icons/close.svg"
+                  alt="Search"
+                />
+              </div>
+
+              <img
+                id="header-search-button"
+                class="header__navbar_search"
+                src="images/index/search-icon-mobile.svg"
+                alt="Search"
+              />
+            </li>
+            <li class="header__navbar_elem -telegram">
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="header__navbar_telegram"
+                  src="images/index/icon-telegram.svg"
+                  alt="Telegram"
+              /></a>
+            </li>
+            <li class="header__navbar_elem -select">
+              <ul class="header__navbar_select">
+                <li class="active" data-language="ru">RU</li>
+                <li data-language="en">EN</li>
+              </ul>
+            </li>
+            <li class="header__navbar_elem d-lg-none -burger">
+              <button class="header__navbar_button">
+                <img
+                  class="header__navbar_burger"
+                  src="images/index/burger-button.svg"
+                  alt="Telegram"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
+        <div class="header-menu -mobile">
+          <div class="header__logo">
+            <img src="images/index/logo-header-mobile.png" alt="Логотип" />
+          </div>
+          <ul class="header__navbar -right">
+            <li class="header__navbar_elem">
+              <img
+                class="header__navbar_search"
+                src="images/index/search-icon-mobile.svg"
+                alt="Search"
+              />
+            </li>
+            <li class="header__navbar_elem">
+              <img
+                class="header__navbar_telegram"
+                src="images/index/icon-telegram-mobile.svg"
+                alt="Telegram"
+              />
+            </li>
+            <li class="header__navbar_elem -burger">
+              <button class="header__navbar_button">
+                <img
+                  class="header__navbar_burger"
+                  src="images/index/burger-button.svg"
+                  alt="Telegram"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="thanks">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="cloud">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="thanks-image">
-                                    <img src="./images/sections/thanks/thanks.png" alt="thanks">
-                                </div>
+      <section class="thanks">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="cloud">
+                <div class="d-flex flex-column align-items-center">
+                  <div class="thanks-image">
+                    <img
+                      src="./images/sections/thanks/thanks.png"
+                      alt="thanks"
+                    />
+                  </div>
 
-                                <div class="title thanks-title">
-                                    <div class="title-text">Заявка успешно отправлена</div>
-                                </div>
+                  <div class="title thanks-title">
+                    <div class="title-text">Заявка успешно отправлена</div>
+                  </div>
 
-                                <div class="thanks-subtitle">Мы свяжемся с Вами в ближайшее время</div>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="thanks-subtitle">
+                    Мы свяжемся с Вами в ближайшее время
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col col-6 col-lg-4 order-2">
-                    <div class="footer-links">
-                        <a class="footer-links__title mb-4" href="catalog.html">Каталог</a>
+      <div class="container">
+        <div class="row">
+          <div class="col col-6 col-lg-4 order-2">
+            <div class="footer-links">
+              <a class="footer-links__title mb-4" href="catalog.html"
+                >Каталог</a
+              >
 
-                        <a class="footer-links__item mb-2" href="catalog.html">Конфеты</a>
-                        <a class="footer-links__item mb-2" href="catalog.html">Конфеты в коробках</a>
-                        <a class="footer-links__item mb-2" href="catalog.html">Печенье</a>
-                        <a class="footer-links__item mb-2" href="catalog.html">Вафли</a>
-                        <a class="footer-links__item mb-2" href="catalog.html">Крекеры</a>
-                        <a class="footer-links__item mb-2" href="catalog.html">Популярное</a>
-                        <a class="footer-links__item" href="catalog.html">Новинки</a>
-                    </div>
-                </div>
-                <div class="col col-6 col-lg-4 order-2">
-                    <div class="footer-links -right">
-                        <a class="footer-links__title -contacts" href="about.html">О компании</a>
-
-                        <a class="footer-links__title mb-4" href="contacts.html">Контакты</a>
-
-                        <div class="footer-links__social">
-                            <a class="footer-links__item mb-2" href="https://google.com">
-                                <div class="footer-links__item--icon">
-                                    <img src="./images/icons/telegram.svg" alt="telegram">
-                                </div>
-                            </a>
-                            <a class="footer-links__item mb-2" href="https://google.com">
-                                <div class="footer-links__item--icon">
-                                    <img src="./images/icons/phone.svg" alt="phone">
-                                </div>
-                                <span>8 (8452) 24-50-77</span>
-                            </a>
-                            <a class="footer-links__item" href="https://google.com">
-                                <div class="footer-links__item--icon">
-                                    <img src="./images/icons/mail.svg" alt="mail">
-                                </div>
-                                <span>info@cf64.ru</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-lg-4 order-1 order-lg-3">
-                    <div class="footer-logo">
-                        <img src="./images/sections/footer/footer-logo.jpg" alt="footer-logo">
-
-                        <p class="footer-logo-description d-none d-lg-block">Создано в «Site Creative»</p>
-                    </div>
-                </div>
-
-                <div class="col-12 d-block d-lg-none order-4">
-                    <p class="footer-logo-description">Создано в «Site Creative»</p>
-                </div>
+              <a class="footer-links__item mb-2" href="catalog.html">Конфеты</a>
+              <a class="footer-links__item mb-2" href="catalog.html"
+                >Конфеты в коробках</a
+              >
+              <a class="footer-links__item mb-2" href="catalog.html">Печенье</a>
+              <a class="footer-links__item mb-2" href="catalog.html">Вафли</a>
+              <a class="footer-links__item mb-2" href="catalog.html">Крекеры</a>
+              <a class="footer-links__item mb-2" href="catalog.html"
+                >Популярное</a
+              >
+              <a class="footer-links__item" href="catalog.html">Новинки</a>
             </div>
-        </div>
-    </footer>
-</body>
+          </div>
+          <div class="col col-6 col-lg-4 order-2">
+            <div class="footer-links -right">
+              <a class="footer-links__title -contacts" href="about.html"
+                >О компании</a
+              >
 
+              <a class="footer-links__title mb-4" href="contacts.html"
+                >Контакты</a
+              >
+
+              <div class="footer-links__social">
+                <a class="footer-links__item mb-2" href="https://google.com">
+                  <div class="footer-links__item--icon">
+                    <img
+                      src="./images/icons/telegram.svg"
+                      class="footer-links__item_img -telegram"
+                      alt="telegram"
+                    />
+                  </div>
+                </a>
+                <a class="footer-links__item mb-2" href="https://google.com">
+                  <div class="footer-links__item--icon -phone">
+                    <img
+                      src="./images/icons/phone.svg"
+                      class="footer-links__item_img -phone"
+                      alt="phone"
+                    />
+                  </div>
+                  <span>8 (8452) 24-50-77</span>
+                </a>
+                <a class="footer-links__item" href="https://google.com">
+                  <div class="footer-links__item--icon">
+                    <img
+                      src="./images/icons/mail.svg"
+                      class="footer-links__item_img -mail"
+                      alt="mail"
+                    />
+                  </div>
+                  <span>info@cf64.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-4 order-1 order-lg-3">
+            <div class="footer-logo">
+              <img
+                src="./images/sections/footer/footer-logo.jpg"
+                alt="footer-logo"
+              />
+
+              <p class="footer-logo-description d-none d-lg-block">
+                Создано в «Site Creative»
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 d-block d-lg-none order-4">
+            <p class="footer-logo-description">Создано в «Site Creative»</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

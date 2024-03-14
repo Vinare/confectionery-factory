@@ -1343,6 +1343,9 @@ img {
   .header {
     height: 83px;
   }
+  .header-menu {
+    height: 83px;
+  }
   .header__navbar {
     padding-top: 27px;
     padding-bottom: 28px;
@@ -1390,6 +1393,49 @@ img {
   }
 }
 @media (max-width: 991.99px) {
+  .header-menu {
+    position: relative;
+  }
+  .header-menu__item_link {
+    background-color: transparent;
+    color: #551414;
+    font-family: "TT Trailers Trial";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 85%;
+    letter-spacing: 2%;
+    text-align: left;
+    text-decoration: none;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .header-menu__item_link.-notunderlined {
+    text-decoration: underline;
+  }
+  .header-menu__item_link:focus {
+    box-shadow: none;
+  }
+  .header-menu__item_link::after {
+    background-image: url("/images/icons/mobile-menu-chevron.svg");
+    background-size: 18px 10px;
+    margin-left: 8px;
+    margin-top: 13px;
+  }
+  .header-menu__nav {
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  .header-menu.-mobile {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 83px;
+    width: 447px;
+    background-color: #FFFFFF;
+    height: auto;
+  }
   .header__navbar {
     display: none;
   }
@@ -1461,6 +1507,9 @@ img {
 @media (max-width: 480px) {
   .header {
     height: 48px;
+  }
+  .header-menu {
+    height: 100%;
   }
   .header__logo {
     padding-top: 8px;
@@ -1554,10 +1603,19 @@ img {
   .footer-links__item--icon {
     width: 40px;
     margin-right: 0;
-    margin-left: 4px;
+    margin-left: 0;
   }
-  .footer-links__item--icon img {
-    width: 40px;
+  .footer-links__item--icon.-phone {
+    margin-left: 8px;
+  }
+  .footer-links__item--icon img.-mail, .footer-links__item--icon img.-telegram {
+    width: 32px;
+  }
+  .footer-links__item--icon img.-phone {
+    width: 20px;
+  }
+  .footer-links__item--icon img.-telegram {
+    width: 33px;
   }
   .footer-links__item span {
     display: none;
@@ -2168,6 +2226,9 @@ img {
   }
   .product-page__description-title {
     margin-bottom: 46px;
+  }
+  .product-page__image img {
+    height: 500px;
   }
 }
 @media (max-width: 480px) {

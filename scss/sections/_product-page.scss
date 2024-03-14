@@ -152,6 +152,10 @@
         margin-bottom: 46px;
       }
     }
+
+    &__image img {
+      height: 500px;
+    }
   }
 
   @media(max-width: 480px) {
