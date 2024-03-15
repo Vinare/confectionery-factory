@@ -271,7 +271,6 @@
 
   @media(max-width: 991.99px) {
     &-menu {
-      position: relative;
 
       &__close {
         position: absolute;
@@ -389,7 +388,7 @@
         }
 
         @media(max-width: 480px) {
-          padding: 20px 20px 180px;
+          padding: 20px 52px 180px 20px;
         }
       }
 
