@@ -24,9 +24,9 @@
             <img src="./images/index/logo-header-desktop.png" alt="Логотип">
           </a>
           <ul class="header__navbar">
-            <li class="header__navbar_item"><a class="header__navbar_link" href="#presentation-section">О компании</a></li>
+            <li class="header__navbar_item"><a class="header__navbar_link" href="about.html">О компании</a></li>
             <li class="header__navbar_item"><a class="header__navbar_link" href="#partners-section">Где купить</a></li>
-            <li class="header__navbar_item"><a class="header__navbar_link" href="#feedback-section">Контакты</a></li>
+            <li class="header__navbar_item"><a class="header__navbar_link" href="contacts.html">Контакты</a></li>
           </ul>
         </div>
         <ul class="header__navbar -right">
@@ -58,12 +58,15 @@
           </li>
         </ul>
         <div class="header-menu -mobile">
+          <div class="header-menu__close">
+            <img src="./images/icons/close-color.svg" alt="close">
+          </div>
           <ul class="header-menu__nav">
-            <li class="header-menu__item">
+            <li class="header-menu__nav_item">
               <div class="accordion accordion-flush">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <a class="accordion-button collapsed header-menu__item_link -notunderlined" href="catalog.html" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a class="accordion-button collapsed header-menu__nav_item_link -notunderlined w-50" href="catalog.html" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                       Каталог
                     </a>
                   </h2>
@@ -98,14 +101,14 @@
               </div>
             </li>
             
-            <li class="header-menu__item">
-              <a class="header-menu__item_link" href="catalog.html">О компании</a>
+            <li class="header-menu__nav_item">
+              <a class="header-menu__nav_item_link" href="about.html">О компании</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__item_link" href="catalog.html">Где купить</a>
+              <a class="header-menu__item_link" href="#partners-section">Где купить</a>
             </li>
-            <li class="header-menu__item">
-              <a class="header-menu__item_link" href="catalog.html">Контакты</a>
+            <li class="header-menu__nav_item">
+              <a class="header-menu__nav_item_link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -183,7 +186,7 @@
     </section>
 
     <section class="presentation" id="presentation-section">
-      <a href="#" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
+      <a href="catalog.html" class="button-catalog-mobile d-sm-inline-flex d-md-none"><img src="./images/elements/button/button-catalog-mobile.png" alt="Заяц"></a>
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-8">
@@ -240,7 +243,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="title partners-title -stars">
+            <div class="title partners-title">
               <h2 class="title-text">Где купить</h2>
             </div>
           </div>

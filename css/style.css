@@ -396,7 +396,7 @@ img {
 }
 .scaling-image.-scale {
   cursor: zoom-out;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 .btn {
@@ -1410,6 +1410,41 @@ img {
   .header-menu {
     position: relative;
   }
+  .header-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  .header-menu__close img {
+    vertical-align: top;
+  }
+  .header-menu__accordion {
+    padding: 12px 0 0;
+    list-style-type: none;
+  }
+  .header-menu__accordion_item {
+    line-height: 0;
+  }
+  .header-menu__accordion_item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .header-menu__accordion_item_link {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-decoration: none;
+  }
+  .header-menu__item {
+    line-height: 0;
+  }
+  .header-menu__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
   .header-menu__item_link {
     background-color: transparent;
     color: #551414;
@@ -1420,8 +1455,7 @@ img {
     letter-spacing: 2%;
     text-align: left;
     text-decoration: none;
-    padding-top: 0;
-    padding-left: 0;
+    padding: 0;
   }
   .header-menu__item_link.-notunderlined {
     text-decoration: underline;
@@ -1430,18 +1464,55 @@ img {
     box-shadow: none;
   }
   .header-menu__item_link::after {
-    background-image: url("/images/icons/mobile-menu-chevron.svg");
+    background-image: url("../images/icons/mobile-menu-chevron.svg");
     background-size: 18px 10px;
     margin-left: 8px;
     margin-top: 13px;
   }
   .header-menu__nav {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    margin-bottom: 0;
     list-style-type: none;
   }
+  .header-menu__nav_item {
+    line-height: 0;
+  }
+  .header-menu__nav_item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .header-menu__nav_item_link {
+    background-color: transparent;
+    color: #551414;
+    font-family: "TT Trailers Trial";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 85%;
+    letter-spacing: 2%;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+  }
+  .header-menu__nav_item_link.-notunderlined {
+    text-decoration: underline;
+  }
+  .header-menu__nav_item_link:focus {
+    box-shadow: none;
+  }
+  .header-menu__nav_item_link::after {
+    background-image: url("../images/icons/mobile-menu-chevron.svg");
+    background-size: 18px 10px;
+    margin-left: 8px;
+    margin-top: 13px;
+  }
+}
+@media (max-width: 991.99px) and (max-width: 480px) {
+  .header-menu__nav {
+    padding: 20px 20px 180px;
+  }
+}
+@media (max-width: 991.99px) {
   .header-menu.-mobile {
-    display: block;
+    display: none;
     position: absolute;
     z-index: 10;
     right: 0;
@@ -1449,7 +1520,25 @@ img {
     width: 447px;
     background-color: #FFFFFF;
     height: auto;
+    opacity: 0;
+    transition: opacity 0.2s;
   }
+  .header-menu.-mobile.-active {
+    opacity: 1;
+  }
+}
+@media (max-width: 991.99px) and (max-width: 767.99px) {
+  .header-menu.-mobile {
+    width: 296px;
+  }
+}
+@media (max-width: 991.99px) and (max-width: 480px) {
+  .header-menu.-mobile {
+    top: 12px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 991.99px) {
   .header__navbar {
     display: none;
   }
@@ -1555,6 +1644,18 @@ img {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #551414;
+  background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icons/mobile-menu-chevron.svg");
+  transform: none;
+}
+.accordion-body {
+  padding: 0;
 }
 
 .footer {
@@ -2130,7 +2231,6 @@ img {
 }
 .product-page__image {
   border-radius: 41px;
-  overflow: hidden;
   height: 100%;
 }
 .product-page__image img {
@@ -2312,7 +2412,12 @@ img {
 .history .cloud-top {
   margin-bottom: 140px;
 }
-@media (max-width: 768px) {
+@media (max-width: 991.99px) {
+  .history .cloud-top {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.99px) {
   .history .title {
     margin-bottom: 20px;
   }

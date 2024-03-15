@@ -14,6 +14,7 @@ import { modal } from "./modules/modal";
 import { formValidator } from "./modules/form-validator";
 import { tabContent } from "./modules/tab-content";
 import { scaleImages } from "./modules/scale-images";
+import { mobileMenu } from "./modules/mobile-menu";
 
 languageSelect();
 searchInput();
@@ -32,3 +33,4 @@ modal();
 formValidator();
 tabContent();
 scaleImages();
+mobileMenu();

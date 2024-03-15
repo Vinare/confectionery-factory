@@ -5,9 +5,16 @@
 
     .cloud-top {
         margin-bottom: 140px;
+
     }
 
-    @media (max-width: 768px) {
+    @media(max-width: 991.99px) {
+        .cloud-top { 
+            margin-bottom: 60px;
+        }
+    }
+
+    @media (max-width: 767.99px) {
         .title {
             margin-bottom: 20px;
         }

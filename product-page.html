@@ -1,304 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="stylesheet" href="./css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
+    <title>Кондитерская фабрика</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="stylesheet" href="./css/custom_bootstrap.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/main.js" defer></script>
-  <title>Кондитерская фабрика</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-menu">
-        <div class="header__navbar-wrapper">
-          <div class="header__logo">
-            <img src="images/index/logo-header-desktop.png" alt="Логотип" />
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <div class="header__navbar-wrapper">
+            <a href="/" class="header__logo">
+              <img src="./images/index/logo-header-desktop.png" alt="Логотип" />
+            </a>
+            <ul class="header__navbar">
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="about.html">О компании</a>
+              </li>
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="#partners-section"
+                  >Где купить</a
+                >
+              </li>
+              <li class="header__navbar_item">
+                <a class="header__navbar_link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
           </div>
-          <ul class="header__navbar">
-            <li class="header__navbar_item">
-              <a class="header__navbar_link" href="#">О компании</a>
+          <ul class="header__navbar -right">
+            <li class="header__navbar_elem">
+              <div class="header__navbar_search-input--wrapper">
+                <input
+                  id="header-search-input"
+                  type="search"
+                  class="header__navbar_search-input"
+                  placeholder="Поиск"
+                />
+
+                <img
+                  id="header-search-close"
+                  class="header__navbar_search--close"
+                  src="./images/icons/close.svg"
+                  alt="Search"
+                />
+              </div>
+
+              <img
+                id="header-search-button"
+                class="header__navbar_search"
+                src="./images/index/search-icon-mobile.svg"
+                alt="Search"
+              />
             </li>
-            <li class="header__navbar_item">
-              <a class="header__navbar_link" href="#">Где купить</a>
+            <li class="header__navbar_elem -telegram">
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="header__navbar_telegram"
+                  src="./images/index/icon-telegram.svg"
+                  alt="Telegram"
+              /></a>
             </li>
-            <li class="header__navbar_item">
-              <a class="header__navbar_link" href="#">Контакты</a>
+            <li class="header__navbar_elem -select">
+              <ul class="header__navbar_select">
+                <li class="active" data-language="ru">RU</li>
+                <li data-language="en">EN</li>
+              </ul>
+            </li>
+            <li class="header__navbar_elem d-lg-none -burger">
+              <button class="header__navbar_button">
+                <img
+                  class="header__navbar_burger"
+                  src="images/index/burger-button.svg"
+                  alt="Telegram"
+                />
+              </button>
             </li>
           </ul>
-        </div>
-        <ul class="header__navbar -right">
-          <li class="header__navbar_elem">
-            <div class="header__navbar_search-input--wrapper">
-              <input id="header-search-input" type="search" class="header__navbar_search-input" placeholder="Поиск" />
+          <div class="header-menu -mobile">
+            <div class="header-menu__close">
+              <img src="./images/icons/close-color.svg" alt="close" />
+            </div>
+            <ul class="header-menu__nav">
+              <li class="header-menu__nav_item">
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <a
+                        class="accordion-button collapsed header-menu__nav_item_link -notunderlined"
+                        href="catalog.html"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Каталог
+                      </a>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ul class="header-menu__accordion">
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Конфеты</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Конфеты в коробках</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Печенье</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Вафли</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Крекеры</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Хиты</a
+                            >
+                          </li>
+                          <li class="header-menu__accordion_item">
+                            <a
+                              class="header-menu__accordion_item_link"
+                              href="catalog.html"
+                              >Новинки</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-              <img id="header-search-close" class="header__navbar_search--close" src="images/icons/close.svg"
-                alt="Search" />
+              <li class="header-menu__nav_item">
+                <a class="header-menu__nav_item_link" href="about.html"
+                  >О компании</a
+                >
+              </li>
+              <li class="header-menu__nav_item">
+                <a class="header-menu__nav_item_link" href="/#partners-section"
+                  >Где купить</a
+                >
+              </li>
+              <li class="header-menu__nav_item">
+                <a class="header-menu__nav_item_link" href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="breadcrumbs-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <span>Каталог</span>
+                </li>
+                <li class="breadcrumbs-item">
+                  <span>Фрут Бар</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-page">
+        <div class="container">
+          <div
+            class="row gx-lg-54px gx-xl-4 product-page-upper justify-content-between"
+          >
+            <div class="col col-xl-5">
+              <div class="product-page__image">
+                <img
+                  class="scaling-image"
+                  src="./images/products/product-6.png"
+                  alt="Фрут Бар"
+                />
+              </div>
+            </div>
+            <div class="flex-lg-grow-1 flex-xl-grow-0 col col-xl-6">
+              <div class="product-page__description">
+                <h2 class="title-text product-page__description-title">
+                  Конфеты «Фрут Бар»
+                </h2>
+                <div class="product-page__description_item">
+                  <h3 class="product-page__description-subtitle">Описание</h3>
+                  <p
+                    class="product-page__description-text"
+                    data-tab-content="0"
+                  >
+                    Конфеты «Фрут бар» - это сочетание кремовой начинки с
+                    фруктовой в шоколадной глазури.
+                  </p>
+                  <p
+                    class="product-page__description-text"
+                    data-tab-content="1"
+                  >
+                    Конфеты «Фрут бар» - это сочетание кремовой начинки с
+                    малиновой в шоколадной глазури с белым шоколадом и кокосовой
+                    стружкой.
+                  </p>
+                </div>
+                <div class="product-page__description_item">
+                  <h3 class="product-page__description-subtitle">Вкус</h3>
+                  <div class="product-page__description-tabs">
+                    <button
+                      type="button"
+                      class="btn btn-outline -md button-tab"
+                      data-tab-btn="0"
+                    >
+                      Апельсин
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline -md button-tab"
+                      data-tab-btn="1"
+                    >
+                      Малина
+                    </button>
+                  </div>
+                </div>
+                <div class="product-page__description_item -request">
+                  <h3 class="product-page__description-subtitle -request">
+                    Оставьте заявку на консультацию
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block feedback-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#feedback-modal"
+                  >
+                    Оставить заявку
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="product-page__details" data-tab-content="0">
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Наименование</strong
+                  >
+                  <span class="product-page__description-text"
+                    >«Фрут бар» со вкусом апельсина</span
+                  >
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Формат</strong
+                  >
+                  <span class="product-page__description-text">Вес</span>
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Вес</strong
+                  >
+                  <span class="product-page__description-text">—</span>
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Срок хранения (дней)</strong
+                  >
+                  <span class="product-page__description-text">270</span>
+                </li>
+                <li class="product-page__details_item mb-3">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >В гофрокоробе</strong
+                  >
+                </li>
+                <li class="product-page__details_item pb-0">
+                  <span class="product-page__description-text -strong"
+                    >Кол-во (шт.)</span
+                  >
+                  <span class="product-page__description-text">—</span>
+                </li>
+                <li class="product-page__details_item">
+                  <span class="product-page__description-text -strong"
+                    >Вес (кг.)</span
+                  >
+                  <span class="product-page__description-text">3,00</span>
+                </li>
+              </ul>
+
+              <ul class="product-page__details" data-tab-content="1">
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Наименование</strong
+                  >
+                  <span class="product-page__description-text"
+                    >«Фрут бар» со вкусом малины</span
+                  >
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Формат</strong
+                  >
+                  <span class="product-page__description-text">Вес</span>
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Вес</strong
+                  >
+                  <span class="product-page__description-text">—</span>
+                </li>
+                <li class="product-page__details_item -with-border">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >Срок хранения (дней)</strong
+                  >
+                  <span class="product-page__description-text">270</span>
+                </li>
+                <li class="product-page__details_item mb-3">
+                  <strong class="product-page__description-subtitle mb-0"
+                    >В гофрокоробе</strong
+                  >
+                </li>
+                <li class="product-page__details_item pb-0">
+                  <span class="product-page__description-text -strong"
+                    >Кол-во (шт.)</span
+                  >
+                  <span class="product-page__description-text">—</span>
+                </li>
+                <li class="product-page__details_item">
+                  <span class="product-page__description-text -strong"
+                    >Вес (кг.)</span
+                  >
+                  <span class="product-page__description-text">3,00</span>
+                </li>
+              </ul>
+
+              <div class="product-page__description_item -mobile">
+                <h3 class="product-page__description-subtitle -request">
+                  Оставьте заявку на консультацию
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-block feedback-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#feedback-modal"
+                >
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="feedback-modal-overlay">
+        <div class="feedback-modal">
+          <div class="feedback-modal__header">
+            <div class="title">
+              <h1 class="title-text">Обратная связь</h1>
             </div>
 
-            <img id="header-search-button" class="header__navbar_search" src="images/index/search-icon-mobile.svg"
-              alt="Search" />
-          </li>
-          <li class="header__navbar_elem -telegram">
-            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img
-                class="header__navbar_telegram" src="images/index/icon-telegram.svg" alt="Telegram" /></a>
-          </li>
-          <li class="header__navbar_elem -select">
-            <ul class="header__navbar_select">
-              <li class="active" data-language="ru">RU</li>
-              <li data-language="en">EN</li>
-            </ul>
-          </li>
-          <li class="header__navbar_elem d-lg-none -burger">
-            <button class="header__navbar_button">
-              <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram" />
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div class="header-menu -mobile">
-        <div class="header__logo">
-          <img src="images/index/logo-header-mobile.png" alt="Логотип" />
-        </div>
-        <ul class="header__navbar -right">
-          <li class="header__navbar_elem">
-            <img class="header__navbar_search" src="images/index/search-icon-mobile.svg" alt="Search" />
-          </li>
-          <li class="header__navbar_elem">
-            <img class="header__navbar_telegram" src="images/index/icon-telegram-mobile.svg" alt="Telegram" />
-          </li>
-          <li class="header__navbar_elem -burger">
-            <button class="header__navbar_button">
-              <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram" />
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+            <div class="feedback-modal__close">
+              <img src="./images/icons/close-color.svg" alt="close" />
+            </div>
+          </div>
 
-  <main>
-    <section class="breadcrumbs-section">
+          <div class="feedback-modal__content">
+            <div class="feedback-modal__content-box">
+              <form
+                class="feedback-form d-flex flex-column h-100 justify-content-between"
+                action=""
+              >
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Имя"
+                />
+                <input
+                  name="phone"
+                  type="tel"
+                  class="form-control"
+                  placeholder="Номер телефона "
+                />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Почта"
+                />
+                <div class="feedback-form__checkbox-group">
+                  <input
+                    class="form-check-input feedback-form__checkbox"
+                    type="checkbox"
+                    checked
+                  />
+                  <p class="feedback-form__consent">
+                    Принимаю
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                      >политику конфиденциальности</a
+                    >
+                    и согласен на обработку
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                      >персональных данных</a
+                    >
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block -submit-button"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="feedback-modal__content-box">
+              <div class="feedback-modal__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a href="/">Главная</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <span>Каталог</span>
-              </li>
-              <li class="breadcrumbs-item">
-                <span>Фрут Бар</span>
-              </li>
-            </ul>
+          <div class="col col-6 col-lg-4 order-2">
+            <div class="footer-links">
+              <a class="footer-links__title mb-4" href="catalog.html"
+                >Каталог</a
+              >
+
+              <a class="footer-links__item mb-2" href="catalog.html">Конфеты</a>
+              <a class="footer-links__item mb-2" href="catalog.html"
+                >Конфеты в коробках</a
+              >
+              <a class="footer-links__item mb-2" href="catalog.html">Печенье</a>
+              <a class="footer-links__item mb-2" href="catalog.html">Вафли</a>
+              <a class="footer-links__item mb-2" href="catalog.html">Крекеры</a>
+              <a class="footer-links__item mb-2" href="catalog.html"
+                >Популярное</a
+              >
+              <a class="footer-links__item" href="catalog.html">Новинки</a>
+            </div>
+          </div>
+          <div class="col col-6 col-lg-4 order-2">
+            <div class="footer-links -right">
+              <a class="footer-links__title -contacts" href="about.html"
+                >О компании</a
+              >
+
+              <a class="footer-links__title mb-4" href="contacts.html"
+                >Контакты</a
+              >
+
+              <div class="footer-links__social">
+                <a class="footer-links__item mb-2" href="https://google.com">
+                  <div class="footer-links__item--icon">
+                    <img
+                      src="./images/icons/telegram.svg"
+                      class="footer-links__item_img -telegram"
+                      alt="telegram"
+                    />
+                  </div>
+                </a>
+                <a class="footer-links__item mb-2" href="https://google.com">
+                  <div class="footer-links__item--icon -phone">
+                    <img
+                      src="./images/icons/phone.svg"
+                      class="footer-links__item_img -phone"
+                      alt="phone"
+                    />
+                  </div>
+                  <span>8 (8452) 24-50-77</span>
+                </a>
+                <a class="footer-links__item" href="https://google.com">
+                  <div class="footer-links__item--icon">
+                    <img
+                      src="./images/icons/mail.svg"
+                      class="footer-links__item_img -mail"
+                      alt="mail"
+                    />
+                  </div>
+                  <span>info@cf64.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-4 order-1 order-lg-3">
+            <div class="footer-logo">
+              <img
+                src="./images/sections/footer/footer-logo.jpg"
+                alt="footer-logo"
+              />
+
+              <p class="footer-logo-description d-none d-lg-block">
+                Создано в «Site Creative»
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 d-block d-lg-none order-4">
+            <p class="footer-logo-description">Создано в «Site Creative»</p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="product-page">
-      <div class="container">
-        <div class="row gx-lg-54px gx-xl-4 product-page-upper justify-content-between">
-          <div class=" col col-xl-5">
-            <div class="product-page__image">
-              <img class="scaling-image" src="./images/products/product-6.png" alt="Фрут Бар">
-            </div>
-          </div>
-          <div class="flex-lg-grow-1 flex-xl-grow-0 col col-xl-6">
-            <div class="product-page__description">
-              <h2 class="title-text product-page__description-title">Конфеты «Фрут Бар»</h2>
-              <div class="product-page__description_item">
-                <h3 class="product-page__description-subtitle">Описание</h3>
-                <p class="product-page__description-text" data-tab-content="0">Конфеты «Фрут бар» - это сочетание кремовой начинки с
-                  фруктовой в шоколадной глазури.</p>
-                <p class="product-page__description-text" data-tab-content="1">Конфеты «Фрут бар» - это сочетание кремовой начинки с
-                  малиновой в шоколадной глазури с белым шоколадом и кокосовой стружкой.</p>
-              </div>
-              <div class="product-page__description_item">
-                <h3 class="product-page__description-subtitle">Вкус</h3>
-                <div class="product-page__description-tabs">
-                  <button type="button" class="btn btn-outline -md button-tab" data-tab-btn="0">Апельсин</button>
-                  <button type="button" class="btn btn-outline -md button-tab" data-tab-btn="1">Малина</button>
-                </div>
-              </div>
-              <div class="product-page__description_item -request">
-                <h3 class="product-page__description-subtitle -request">Оставьте заявку на консультацию</h3>
-                <button type="button" class="btn btn-primary btn-block feedback-btn" data-bs-toggle="modal"
-                  data-bs-target="#feedback-modal">Оставить заявку</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul class="product-page__details" data-tab-content="0">
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Наименование</strong>
-                <span class="product-page__description-text">«Фрут бар» со вкусом апельсина</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Формат</strong>
-                <span class="product-page__description-text">Вес</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Вес</strong>
-                <span class="product-page__description-text">—</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Срок хранения (дней)</strong>
-                <span class="product-page__description-text">270</span>
-              </li>
-              <li class="product-page__details_item mb-3">
-                <strong class="product-page__description-subtitle mb-0">В гофрокоробе</strong>
-              </li>
-              <li class="product-page__details_item pb-0">
-                <span class="product-page__description-text -strong">Кол-во (шт.)</span>
-                <span class="product-page__description-text">—</span>
-              </li>
-              <li class="product-page__details_item">
-                <span class="product-page__description-text -strong">Вес (кг.)</span>
-                <span class="product-page__description-text">3,00</span>
-              </li>
-            </ul>
-
-            <ul class="product-page__details" data-tab-content="1">
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Наименование</strong>
-                <span class="product-page__description-text">«Фрут бар» со вкусом малины</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Формат</strong>
-                <span class="product-page__description-text">Вес</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Вес</strong>
-                <span class="product-page__description-text">—</span>
-              </li>
-              <li class="product-page__details_item -with-border">
-                <strong class="product-page__description-subtitle mb-0">Срок хранения (дней)</strong>
-                <span class="product-page__description-text">270</span>
-              </li>
-              <li class="product-page__details_item mb-3">
-                <strong class="product-page__description-subtitle mb-0">В гофрокоробе</strong>
-              </li>
-              <li class="product-page__details_item pb-0">
-                <span class="product-page__description-text -strong">Кол-во (шт.)</span>
-                <span class="product-page__description-text">—</span>
-              </li>
-              <li class="product-page__details_item">
-                <span class="product-page__description-text -strong">Вес (кг.)</span>
-                <span class="product-page__description-text">3,00</span>
-              </li>
-            </ul>
-            
-            <div class="product-page__description_item -mobile">
-              <h3 class="product-page__description-subtitle -request">Оставьте заявку на консультацию</h3>
-              <button type="button" class="btn btn-primary btn-block feedback-btn" data-bs-toggle="modal"
-                data-bs-target="#feedback-modal">Оставить заявку</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="feedback-modal-overlay">
-      <div class="feedback-modal">
-        <div class="feedback-modal__header">
-          <div class="title">
-            <h1 class="title-text">Обратная связь</h1>
-          </div>
-          
-          <div class="feedback-modal__close">
-            <img src="./images/icons/close-color.svg" alt="close">
-          </div>
-        </div>
-
-        <div class="feedback-modal__content">
-          <div class="feedback-modal__content-box">
-            <form class="feedback-form d-flex flex-column h-100 justify-content-between" action="">
-              <input name="name" type="text" class="form-control" placeholder="Имя">
-              <input name="phone" type="tel" class="form-control" placeholder="Номер телефона ">
-              <input name="email" type="email" class="form-control" placeholder="Почта">
-              <div class="feedback-form__checkbox-group">
-                <input class="form-check-input feedback-form__checkbox" type="checkbox" checked>
-                <p class="feedback-form__consent">Принимаю <a href="http://" target="_blank" rel="noopener noreferrer">политику конфиденциальности</a> и согласен на обработку <a href="http://" target="_blank" rel="noopener noreferrer">персональных данных</a></p>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block -submit-button">Отправить</button>
-            </form>
-          </div>
-          <div class="feedback-modal__content-box">
-            <div class="feedback-modal__logo"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col col-6 col-lg-4 order-2">
-          <div class="footer-links">
-            <a class="footer-links__title mb-4" href="catalog.html">Каталог</a>
-
-            <a class="footer-links__item mb-2" href="catalog.html">Конфеты</a>
-            <a class="footer-links__item mb-2" href="catalog.html">Конфеты в коробках</a>
-            <a class="footer-links__item mb-2" href="catalog.html">Печенье</a>
-            <a class="footer-links__item mb-2" href="catalog.html">Вафли</a>
-            <a class="footer-links__item mb-2" href="catalog.html">Крекеры</a>
-            <a class="footer-links__item mb-2" href="catalog.html">Популярное</a>
-            <a class="footer-links__item" href="catalog.html">Новинки</a>
-          </div>
-        </div>
-        <div class="col col-6 col-lg-4 order-2">
-          <div class="footer-links -right">
-            <a class="footer-links__title -contacts" href="about.html">О компании</a>
-
-            <a class="footer-links__title mb-4" href="contacts.html">Контакты</a>
-
-            <div class="footer-links__social">
-              <a class="footer-links__item mb-2" href="https://google.com">
-                <div class="footer-links__item--icon">
-                  <img src="./images/icons/telegram.svg" class="footer-links__item_img -telegram" alt="telegram">
-                </div>
-              </a>
-              <a class="footer-links__item mb-2" href="https://google.com">
-                <div class="footer-links__item--icon -phone">
-                  <img src="./images/icons/phone.svg" class="footer-links__item_img -phone" alt="phone">
-                </div>
-                <span>8 (8452) 24-50-77</span>
-              </a>
-              <a class="footer-links__item" href="https://google.com">
-                <div class="footer-links__item--icon">
-                  <img src="./images/icons/mail.svg" class="footer-links__item_img -mail" alt="mail">
-                </div>
-                <span>info@cf64.ru</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-lg-4 order-1 order-lg-3">
-          <div class="footer-logo">
-            <img src="./images/sections/footer/footer-logo.jpg" alt="footer-logo">
-
-            <p class="footer-logo-description d-none d-lg-block">Создано в «Site Creative»</p>
-          </div>
-        </div>
-
-        <div class="col-12 d-block d-lg-none order-4">
-          <p class="footer-logo-description">Создано в «Site Creative»</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
