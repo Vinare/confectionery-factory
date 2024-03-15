@@ -27,6 +27,10 @@
       &:not(:last-child) {
         margin-bottom: 40px;
       }
+
+      &.-mobile {
+        display: none;
+      }
     }
 
     &-title {

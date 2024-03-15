@@ -12,6 +12,7 @@ import { yandexMap } from "./modules/yandex-map";
 import { timeline } from "./modules/timeline";
 import { modal } from "./modules/modal";
 import { formValidator } from "./modules/form-validator";
+import { tabContent } from "./modules/tab-content";
 
 languageSelect();
 searchInput();
@@ -28,3 +29,4 @@ yandexMap();
 timeline();
 modal();
 formValidator();
+tabContent();
