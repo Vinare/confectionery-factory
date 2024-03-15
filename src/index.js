@@ -13,6 +13,7 @@ import { timeline } from "./modules/timeline";
 import { modal } from "./modules/modal";
 import { formValidator } from "./modules/form-validator";
 import { tabContent } from "./modules/tab-content";
+import { scaleImages } from "./modules/scale-images";
 
 languageSelect();
 searchInput();
@@ -30,3 +31,4 @@ timeline();
 modal();
 formValidator();
 tabContent();
+scaleImages();
