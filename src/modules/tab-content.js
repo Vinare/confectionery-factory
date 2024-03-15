@@ -3,7 +3,7 @@ export const tabContent = () => {
 
     const changeTab = (activeIndex) => {
         const content = document.querySelectorAll(`[data-tab-content]`)
-        console.log(content);
+  
         buttons.forEach((button, idx) => {
             if (activeIndex === idx) {
                 button.classList.add('active')
