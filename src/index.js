@@ -16,6 +16,9 @@ import { tabContent } from "./modules/tab-content";
 import { scaleImages } from "./modules/scale-images";
 import { mobileMenu } from "./modules/mobile-menu";
 
+// Подключение функций bootstrap
+import {Collapse} from 'bootstrap'
+
 languageSelect();
 searchInput();
 heroSlider();

@@ -388,7 +388,7 @@
         }
 
         @media(max-width: 480px) {
-          padding: 20px 52px 180px 20px;
+          padding: 20px 20px 180px;
         }
       }
 
@@ -397,12 +397,14 @@
         position: absolute;
         z-index: 10;
         right: 0;
-        top: 83px;
+        top: -5px;
         width: 447px;
         background-color: $white;
         height: auto;
         opacity: 0;
         transition: opacity .2s;
+        border-radius: 15px;
+        z-index: 9999;
 
         &.-active {
           opacity: 1;
@@ -412,9 +414,12 @@
           width: 296px;
         }
 
-        @media(max-width: 480px) {
-          top: 12px;
-          border-radius: 15px;
+        @media (max-width: 480px) {
+          position: fixed;
+          top: 4px;
+          right: 10px;
+          left: 10px;
+          width: auto;
         }
       }
     }
@@ -437,6 +442,7 @@
           padding-top: 9px;
           padding-bottom: 9px;
           padding-right: 0;
+          position: relative;
         }
       }
 
