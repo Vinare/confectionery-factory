@@ -28,6 +28,8 @@ export const tabContent = () => {
         })
     })
 
+    changeTab(0)
+
     // для отметки кнопок табов устанавливаем data аттрибуты с индексом по порядку от нуля 
     // data-tab-btn="0"
     // data-tab-btn="1"
