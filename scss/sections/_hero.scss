@@ -112,7 +112,7 @@
     background-position: top calc(100% - 230px) center;
     background-size: 145%;
     padding-top: 28px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 
     &__slider {
       &_tabs {
@@ -121,6 +121,7 @@
 
         .splide__track {
           overflow: hidden;
+          padding-bottom: 30px;
 
           .splide__list {
             row-gap: normal;
