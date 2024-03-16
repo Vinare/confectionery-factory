@@ -214,6 +214,32 @@ $secondary-color: #5514141a;
           max-width: 130px;
         }
 
+        &.-candies-in-box-catalog {
+          left: -62px;
+          top: -30px;
+          max-width: 100px;
+        }
+        &.-candies-catalog {
+          left: -56px;
+          top: -42px;
+          max-width: 100px;
+        }
+        &.-crackers-catalog {
+          left: -44px;
+          top: -24px;
+          max-width: 100px;
+        }
+        &.-coockies-catalog {
+          left: -40px;
+          top: -46px;
+          max-width: 130px;
+        }
+        &.-waffles-catalog {
+          left: -48px;
+          top: -38px;
+          max-width: 130px;
+        }
+
         @media (max-width: $mobile-breakpoint) {
           max-width: 115px;
         }
