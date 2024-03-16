@@ -1,5 +1,5 @@
 export const buttonCatalog = () => {
-  const heroSection = document.querySelector(".hero");
+  const header = document.querySelector(".header");
   const buttonCatalog = document.querySelector(".btn-catalog");
 
   if (buttonCatalog) {
@@ -22,7 +22,7 @@ export const buttonCatalog = () => {
         }
       );
 
-      observer.observe(heroSection);
+      observer.observe(header);
     };
 
     createObserver();
