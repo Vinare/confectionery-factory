@@ -15,7 +15,6 @@ export const heroSlider = (delay = 4000) => {
     tabSlider = new Splide(".hero__slider_tabs--slider", {
       arrows: false,
       pagination: false,
-      // clones: 0,
       type: "loop",
       focus: "center",
       autoWidth: true,
@@ -78,12 +77,12 @@ export const heroSlider = (delay = 4000) => {
         activeIndex = tabIndex;
   
         changeSlide(tabIndex);
-        // stopAutoplay()
-        // startAutoplay()
+        stopAutoplay()
+        startAutoplay()
       }
     })
   
     changeSlide(activeIndex);
-    // autoplay();
+    autoplay();
   }
 };
