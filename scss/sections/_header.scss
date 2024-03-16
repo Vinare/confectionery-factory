@@ -469,6 +469,7 @@
           border: none;
           font-size: 22px;
           background-image: url('../images/index/search-icon-mobile.svg');
+          margin-top: 0;
 
           &--wrapper {
             display: none;
@@ -477,6 +478,7 @@
             right: 0;
             bottom: 0;
             left: 0;
+            z-index: 2;
 
             &.-active {
               display: block;

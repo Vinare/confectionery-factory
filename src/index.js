@@ -4,7 +4,7 @@ import { heroSlider } from "./modules/hero-slider";
 import { productsSlider } from "./modules/products-slider";
 import { ourTime } from "./modules/our-time";
 import { buttonCatalog } from "./modules/button-catalog";
-import { smoothScroll } from "./modules/smoothScroll";
+import { smoothScroll } from "./modules/smooth-scroll";
 import { toTopButton } from "./modules/to-top-button";
 import { catalogSlider } from "./modules/catalog-slider";
 import { searchDecl } from "./modules/search-decl";

@@ -187,9 +187,32 @@ $secondary-color: #5514141a;
       .category-image {
         display: block;
         position: absolute;
-        left: -48px;
-        top: -54px;
-        max-width: 130px;
+
+        &.-candies-in-box {
+          left: -42px;
+          top: -30px;
+          max-width: 100px;
+        }
+        &.-candies {
+          left: -56px;
+          top: -30px;
+          max-width: 100px;
+        }
+        &.-crackers {
+          left: -44px;
+          top: -24px;
+          max-width: 100px;
+        }
+        &.-coockies {
+          left: -40px;
+          top: -46px;
+          max-width: 130px;
+        }
+        &.-waffles {
+          left: -48px;
+          top: -54px;
+          max-width: 130px;
+        }
 
         @media (max-width: $mobile-breakpoint) {
           max-width: 115px;

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="stylesheet" href="./css/custom_bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
@@ -18,58 +18,36 @@
       <div class="container">
         <div class="header-menu">
           <div class="header__navbar-wrapper">
-            <a href="/" class="header__logo">
+            <a href="./" class="header__logo">
               <img src="./images/index/logo-header-desktop.png" alt="Логотип" />
             </a>
             <ul class="header__navbar">
               <li class="header__navbar_item">
-                <a class="header__navbar_link" href="about.html">О компании</a>
+                <a class="header__navbar_link" href="./about.html">О компании</a>
               </li>
               <li class="header__navbar_item">
-                <a class="header__navbar_link" href="#partners-section"
-                  >Где купить</a
-                >
+                <a class="header__navbar_link" href="./#partners-section">Где купить</a>
               </li>
               <li class="header__navbar_item">
-                <a class="header__navbar_link" href="contacts.html">Контакты</a>
+                <a class="header__navbar_link" href="./contacts.html">Контакты</a>
               </li>
             </ul>
           </div>
           <ul class="header__navbar -right">
             <li class="header__navbar_elem">
               <div class="header__navbar_search-input--wrapper">
-                <input
-                  id="header-search-input"
-                  type="search"
-                  class="header__navbar_search-input"
-                  placeholder="Поиск"
-                />
-
-                <img
-                  id="header-search-close"
-                  class="header__navbar_search--close"
-                  src="./images/icons/close.svg"
-                  alt="Search"
-                />
+                <input id="header-search-input" type="search" class="header__navbar_search-input" placeholder="Поиск" />
+  
+                <img id="header-search-close" class="header__navbar_search--close" src="./images/icons/close.svg"
+                  alt="Search" />
               </div>
-
-              <img
-                id="header-search-button"
-                class="header__navbar_search"
-                src="./images/index/search-icon-mobile.svg"
-                alt="Search"
-              />
+  
+              <img id="header-search-button" class="header__navbar_search" src="./images/index/search-icon-mobile.svg"
+                alt="Search" />
             </li>
             <li class="header__navbar_elem -telegram">
-              <a
-                href="http://www.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  class="header__navbar_telegram"
-                  src="./images/index/icon-telegram.svg"
-                  alt="Telegram"
-              /></a>
+              <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img
+                  class="header__navbar_telegram" src="./images/index/icon-telegram.svg" alt="Telegram" /></a>
             </li>
             <li class="header__navbar_elem -select">
               <ul class="header__navbar_select">
@@ -79,115 +57,69 @@
             </li>
             <li class="header__navbar_elem d-lg-none -burger">
               <button class="header__navbar_button">
-                <img
-                  class="header__navbar_burger"
-                  src="images/index/burger-button.svg"
-                  alt="Telegram"
-                />
+                <img class="header__navbar_burger" src="images/index/burger-button.svg" alt="Telegram" />
               </button>
-            </li>
-          </ul>
-          <div class="header-menu -mobile">
-            <div class="header-menu__close">
-              <img src="./images/icons/close-color.svg" alt="close" />
-            </div>
-            <ul class="header-menu__nav">
-              <li class="header-menu__nav_item">
-                <div class="accordion accordion-flush">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <a
-                        class="accordion-button collapsed header-menu__nav_item_link -notunderlined"
-                        href="catalog.html"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseOne"
-                      >
-                        Каталог
-                      </a>
-                    </h2>
-                    <div
-                      id="flush-collapseOne"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        <ul class="header-menu__accordion">
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Конфеты</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Конфеты в коробках</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Печенье</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Вафли</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Крекеры</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Хиты</a
-                            >
-                          </li>
-                          <li class="header-menu__accordion_item">
-                            <a
-                              class="header-menu__accordion_item_link"
-                              href="catalog.html"
-                              >Новинки</a
-                            >
-                          </li>
-                        </ul>
+  
+              <div class="header-menu -mobile">
+                <div class="header-menu__close">
+                  <img src="./images/icons/close-color.svg" alt="close" />
+                </div>
+                <ul class="header-menu__nav">
+                  <li class="header-menu__nav_item">
+                    <div class="accordion accordion-flush">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <a class="accordion-button collapsed header-menu__nav_item_link -notunderlined w-50" href="catalog.html"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Каталог
+                          </a>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <ul class="header-menu__accordion">
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Конфеты</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Конфеты в коробках</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Печенье</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Вафли</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Крекеры</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Хиты</a>
+                              </li>
+                              <li class="header-menu__accordion_item">
+                                <a class="header-menu__accordion_item_link" href="catalog.html">Новинки</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="header-menu__nav_item">
-                <a class="header-menu__nav_item_link" href="about.html"
-                  >О компании</a
-                >
-              </li>
-              <li class="header-menu__nav_item">
-                <a class="header-menu__nav_item_link" href="/#partners-section"
-                  >Где купить</a
-                >
-              </li>
-              <li class="header-menu__nav_item">
-                <a class="header-menu__nav_item_link" href="contacts.html"
-                  >Контакты</a
-                >
-              </li>
-            </ul>
-          </div>
+                  </li>
+      
+                  <li class="header-menu__nav_item">
+                    <a class="header-menu__nav_item_link" href="about.html">О компании</a>
+                  </li>
+                  <li class="header-menu__nav_item">
+                    <a class="header-menu__nav_item_link" href="/#partners-section">Где купить</a>
+                  </li>
+                  <li class="header-menu__nav_item">
+                    <a class="header-menu__nav_item_link" href="contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

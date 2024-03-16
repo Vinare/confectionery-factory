@@ -78,12 +78,12 @@ export const heroSlider = (delay = 4000) => {
         activeIndex = tabIndex;
   
         changeSlide(tabIndex);
-        stopAutoplay()
-        startAutoplay()
+        // stopAutoplay()
+        // startAutoplay()
       }
     })
   
     changeSlide(activeIndex);
-    autoplay();
+    // autoplay();
   }
 };
